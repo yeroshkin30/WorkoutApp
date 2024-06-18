@@ -14,6 +14,17 @@
 		4F2988232C203A7D00B2746F /* iOSDevTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988222C203A7D00B2746F /* iOSDevTestAppTests.swift */; };
 		4F29882D2C203A7D00B2746F /* iOSDevTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F29882C2C203A7D00B2746F /* iOSDevTestAppUITests.swift */; };
 		4F29882F2C203A7D00B2746F /* iOSDevTestAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F29882E2C203A7D00B2746F /* iOSDevTestAppUITestsLaunchTests.swift */; };
+		4F29883C2C203AA400B2746F /* GeneratedSetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F29883B2C203AA400B2746F /* GeneratedSetRow.swift */; };
+		4F29883E2C203C8200B2746F /* Exercize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F29883D2C203C8200B2746F /* Exercize.swift */; };
+		4F2988402C203C9800B2746F /* SetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F29883F2C203C9800B2746F /* SetModel.swift */; };
+		4F2988422C203F6300B2746F /* GeneratedSetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988412C203F6300B2746F /* GeneratedSetList.swift */; };
+		4F2988442C205A5E00B2746F /* ExersizeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988432C205A5E00B2746F /* ExersizeRow.swift */; };
+		4F2988462C20CF5700B2746F /* ExersizeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988452C20CF5700B2746F /* ExersizeListView.swift */; };
+		4F2988482C20D4D200B2746F /* SetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988472C20D4D200B2746F /* SetDetailView.swift */; };
+		4F29884C2C20E35200B2746F /* MainFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F29884B2C20E35200B2746F /* MainFlowView.swift */; };
+		4F29884E2C20E5C400B2746F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F29884D2C20E5C400B2746F /* SettingsView.swift */; };
+		4F2988562C21FFAF00B2746F /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988552C21FFAF00B2746F /* TabBarButton.swift */; };
+		4F2988582C2211EE00B2746F /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988572C2211EE00B2746F /* Extension+View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +55,17 @@
 		4F2988282C203A7D00B2746F /* iOSDevTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSDevTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F29882C2C203A7D00B2746F /* iOSDevTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDevTestAppUITests.swift; sourceTree = "<group>"; };
 		4F29882E2C203A7D00B2746F /* iOSDevTestAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDevTestAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4F29883B2C203AA400B2746F /* GeneratedSetRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedSetRow.swift; sourceTree = "<group>"; };
+		4F29883D2C203C8200B2746F /* Exercize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercize.swift; sourceTree = "<group>"; };
+		4F29883F2C203C9800B2746F /* SetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetModel.swift; sourceTree = "<group>"; };
+		4F2988412C203F6300B2746F /* GeneratedSetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedSetList.swift; sourceTree = "<group>"; };
+		4F2988432C205A5E00B2746F /* ExersizeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExersizeRow.swift; sourceTree = "<group>"; };
+		4F2988452C20CF5700B2746F /* ExersizeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExersizeListView.swift; sourceTree = "<group>"; };
+		4F2988472C20D4D200B2746F /* SetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetDetailView.swift; sourceTree = "<group>"; };
+		4F29884B2C20E35200B2746F /* MainFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowView.swift; sourceTree = "<group>"; };
+		4F29884D2C20E5C400B2746F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		4F2988552C21FFAF00B2746F /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
+		4F2988572C2211EE00B2746F /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +118,15 @@
 			children = (
 				4F2988112C203A7B00B2746F /* iOSDevTestAppApp.swift */,
 				4F2988132C203A7B00B2746F /* ContentView.swift */,
+				4F29884A2C20D58700B2746F /* GeneratedSet */,
+				4F29883D2C203C8200B2746F /* Exercize.swift */,
+				4F2988492C20D57D00B2746F /* ExersizeView */,
+				4F2988472C20D4D200B2746F /* SetDetailView.swift */,
+				4F29884B2C20E35200B2746F /* MainFlowView.swift */,
+				4F2988552C21FFAF00B2746F /* TabBarButton.swift */,
+				4F29884D2C20E5C400B2746F /* SettingsView.swift */,
+				4F29883F2C203C9800B2746F /* SetModel.swift */,
+				4F2988572C2211EE00B2746F /* Extension+View.swift */,
 				4F2988152C203A7C00B2746F /* Assets.xcassets */,
 				4F2988172C203A7C00B2746F /* Preview Content */,
 			);
@@ -125,6 +156,24 @@
 				4F29882E2C203A7D00B2746F /* iOSDevTestAppUITestsLaunchTests.swift */,
 			);
 			path = iOSDevTestAppUITests;
+			sourceTree = "<group>";
+		};
+		4F2988492C20D57D00B2746F /* ExersizeView */ = {
+			isa = PBXGroup;
+			children = (
+				4F2988432C205A5E00B2746F /* ExersizeRow.swift */,
+				4F2988452C20CF5700B2746F /* ExersizeListView.swift */,
+			);
+			path = ExersizeView;
+			sourceTree = "<group>";
+		};
+		4F29884A2C20D58700B2746F /* GeneratedSet */ = {
+			isa = PBXGroup;
+			children = (
+				4F29883B2C203AA400B2746F /* GeneratedSetRow.swift */,
+				4F2988412C203F6300B2746F /* GeneratedSetList.swift */,
+			);
+			path = GeneratedSet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +306,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F2988422C203F6300B2746F /* GeneratedSetList.swift in Sources */,
+				4F2988442C205A5E00B2746F /* ExersizeRow.swift in Sources */,
+				4F29883E2C203C8200B2746F /* Exercize.swift in Sources */,
+				4F29884C2C20E35200B2746F /* MainFlowView.swift in Sources */,
 				4F2988142C203A7B00B2746F /* ContentView.swift in Sources */,
+				4F2988562C21FFAF00B2746F /* TabBarButton.swift in Sources */,
+				4F2988402C203C9800B2746F /* SetModel.swift in Sources */,
+				4F2988482C20D4D200B2746F /* SetDetailView.swift in Sources */,
 				4F2988122C203A7B00B2746F /* iOSDevTestAppApp.swift in Sources */,
+				4F29883C2C203AA400B2746F /* GeneratedSetRow.swift in Sources */,
+				4F2988462C20CF5700B2746F /* ExersizeListView.swift in Sources */,
+				4F2988582C2211EE00B2746F /* Extension+View.swift in Sources */,
+				4F29884E2C20E5C400B2746F /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
