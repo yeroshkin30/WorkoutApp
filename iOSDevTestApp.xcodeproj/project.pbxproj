@@ -16,15 +16,25 @@
 		4F29882F2C203A7D00B2746F /* iOSDevTestAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F29882E2C203A7D00B2746F /* iOSDevTestAppUITestsLaunchTests.swift */; };
 		4F29883C2C203AA400B2746F /* GeneratedSetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F29883B2C203AA400B2746F /* GeneratedSetRow.swift */; };
 		4F29883E2C203C8200B2746F /* Exercize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F29883D2C203C8200B2746F /* Exercize.swift */; };
-		4F2988402C203C9800B2746F /* SetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F29883F2C203C9800B2746F /* SetModel.swift */; };
+		4F2988402C203C9800B2746F /* ExercizeSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F29883F2C203C9800B2746F /* ExercizeSet.swift */; };
 		4F2988422C203F6300B2746F /* GeneratedSetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988412C203F6300B2746F /* GeneratedSetList.swift */; };
 		4F2988442C205A5E00B2746F /* ExersizeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988432C205A5E00B2746F /* ExersizeRow.swift */; };
 		4F2988462C20CF5700B2746F /* ExersizeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988452C20CF5700B2746F /* ExersizeListView.swift */; };
 		4F2988482C20D4D200B2746F /* SetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988472C20D4D200B2746F /* SetDetailView.swift */; };
-		4F29884C2C20E35200B2746F /* MainFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F29884B2C20E35200B2746F /* MainFlowView.swift */; };
 		4F29884E2C20E5C400B2746F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F29884D2C20E5C400B2746F /* SettingsView.swift */; };
 		4F2988562C21FFAF00B2746F /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988552C21FFAF00B2746F /* TabBarButton.swift */; };
 		4F2988582C2211EE00B2746F /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988572C2211EE00B2746F /* Extension+View.swift */; };
+		4F29885A2C222B8900B2746F /* Localisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988592C222B8900B2746F /* Localisation.swift */; };
+		4F29885C2C2231CB00B2746F /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F29885B2C2231CB00B2746F /* TabBar.swift */; };
+		4F29885E2C2233B300B2746F /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F29885D2C2233B300B2746F /* TabBarItem.swift */; };
+		4F2988612C22379A00B2746F /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988602C22379A00B2746F /* WorkoutView.swift */; };
+		4F2988632C223C3D00B2746F /* AllSetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988622C223C3D00B2746F /* AllSetsView.swift */; };
+		4F2988652C22F43E00B2746F /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988642C22F43E00B2746F /* RoundedCorner.swift */; };
+		4F2988682C23047F00B2746F /* BebasNeue-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F2988662C23047F00B2746F /* BebasNeue-Regular.ttf */; };
+		4F29886C2C23200D00B2746F /* WorkoutFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F29886B2C23200D00B2746F /* WorkoutFlowView.swift */; };
+		4F2988752C23434500B2746F /* Extension+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988742C23434500B2746F /* Extension+UIFont.swift */; };
+		4F2988792C23903F00B2746F /* TrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988782C23903E00B2746F /* TrainingView.swift */; };
+		4F3C0AA22C297223002867D0 /* TrainingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3C0AA12C297222002867D0 /* TrainingModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,15 +67,26 @@
 		4F29882E2C203A7D00B2746F /* iOSDevTestAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDevTestAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4F29883B2C203AA400B2746F /* GeneratedSetRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedSetRow.swift; sourceTree = "<group>"; };
 		4F29883D2C203C8200B2746F /* Exercize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercize.swift; sourceTree = "<group>"; };
-		4F29883F2C203C9800B2746F /* SetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetModel.swift; sourceTree = "<group>"; };
+		4F29883F2C203C9800B2746F /* ExercizeSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercizeSet.swift; sourceTree = "<group>"; };
 		4F2988412C203F6300B2746F /* GeneratedSetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedSetList.swift; sourceTree = "<group>"; };
 		4F2988432C205A5E00B2746F /* ExersizeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExersizeRow.swift; sourceTree = "<group>"; };
 		4F2988452C20CF5700B2746F /* ExersizeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExersizeListView.swift; sourceTree = "<group>"; };
 		4F2988472C20D4D200B2746F /* SetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetDetailView.swift; sourceTree = "<group>"; };
-		4F29884B2C20E35200B2746F /* MainFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowView.swift; sourceTree = "<group>"; };
 		4F29884D2C20E5C400B2746F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		4F2988552C21FFAF00B2746F /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
 		4F2988572C2211EE00B2746F /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
+		4F2988592C222B8900B2746F /* Localisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localisation.swift; sourceTree = "<group>"; };
+		4F29885B2C2231CB00B2746F /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		4F29885D2C2233B300B2746F /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		4F2988602C22379A00B2746F /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
+		4F2988622C223C3D00B2746F /* AllSetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSetsView.swift; sourceTree = "<group>"; };
+		4F2988642C22F43E00B2746F /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		4F2988662C23047F00B2746F /* BebasNeue-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BebasNeue-Regular.ttf"; sourceTree = "<group>"; };
+		4F29886B2C23200D00B2746F /* WorkoutFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutFlowView.swift; sourceTree = "<group>"; };
+		4F2988732C233F8A00B2746F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4F2988742C23434500B2746F /* Extension+UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIFont.swift"; sourceTree = "<group>"; };
+		4F2988782C23903E00B2746F /* TrainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingView.swift; sourceTree = "<group>"; };
+		4F3C0AA12C297222002867D0 /* TrainingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,17 +137,13 @@
 		4F2988102C203A7B00B2746F /* iOSDevTestApp */ = {
 			isa = PBXGroup;
 			children = (
-				4F2988112C203A7B00B2746F /* iOSDevTestAppApp.swift */,
-				4F2988132C203A7B00B2746F /* ContentView.swift */,
-				4F29884A2C20D58700B2746F /* GeneratedSet */,
-				4F29883D2C203C8200B2746F /* Exercize.swift */,
-				4F2988492C20D57D00B2746F /* ExersizeView */,
-				4F2988472C20D4D200B2746F /* SetDetailView.swift */,
-				4F29884B2C20E35200B2746F /* MainFlowView.swift */,
-				4F2988552C21FFAF00B2746F /* TabBarButton.swift */,
-				4F29884D2C20E5C400B2746F /* SettingsView.swift */,
-				4F29883F2C203C9800B2746F /* SetModel.swift */,
-				4F2988572C2211EE00B2746F /* Extension+View.swift */,
+				4F2988732C233F8A00B2746F /* Info.plist */,
+				4F29886F2C23398900B2746F /* AppFlow */,
+				4F29885F2C22343600B2746F /* TabBar */,
+				4F29886D2C23394B00B2746F /* WorkoutScreen */,
+				4F2988722C233A0C00B2746F /* SettingsScreen */,
+				4F29883F2C203C9800B2746F /* ExercizeSet.swift */,
+				4F2988712C2339FD00B2746F /* Helpers */,
 				4F2988152C203A7C00B2746F /* Assets.xcassets */,
 				4F2988172C203A7C00B2746F /* Preview Content */,
 			);
@@ -158,22 +175,117 @@
 			path = iOSDevTestAppUITests;
 			sourceTree = "<group>";
 		};
-		4F2988492C20D57D00B2746F /* ExersizeView */ = {
+		4F2988492C20D57D00B2746F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				4F2988432C205A5E00B2746F /* ExersizeRow.swift */,
 				4F2988452C20CF5700B2746F /* ExersizeListView.swift */,
 			);
-			path = ExersizeView;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		4F29884A2C20D58700B2746F /* GeneratedSet */ = {
 			isa = PBXGroup;
 			children = (
-				4F29883B2C203AA400B2746F /* GeneratedSetRow.swift */,
-				4F2988412C203F6300B2746F /* GeneratedSetList.swift */,
+				4F2988622C223C3D00B2746F /* AllSetsView.swift */,
+				4F29886E2C23396900B2746F /* Helpers */,
 			);
 			path = GeneratedSet;
+			sourceTree = "<group>";
+		};
+		4F29885F2C22343600B2746F /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				4F29885B2C2231CB00B2746F /* TabBar.swift */,
+				4F2988772C235AC100B2746F /* Model */,
+				4F2988762C235AB300B2746F /* Helper */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		4F2988672C23047F00B2746F /* Bebas_Neue */ = {
+			isa = PBXGroup;
+			children = (
+				4F2988662C23047F00B2746F /* BebasNeue-Regular.ttf */,
+			);
+			path = Bebas_Neue;
+			sourceTree = "<group>";
+		};
+		4F29886D2C23394B00B2746F /* WorkoutScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4F29886B2C23200D00B2746F /* WorkoutFlowView.swift */,
+				4F2988602C22379A00B2746F /* WorkoutView.swift */,
+				4F2988782C23903E00B2746F /* TrainingView.swift */,
+				4F3C0AA12C297222002867D0 /* TrainingModel.swift */,
+				4F2988492C20D57D00B2746F /* Helpers */,
+				4F29884A2C20D58700B2746F /* GeneratedSet */,
+				4F2988702C2339C000B2746F /* SetDetailView */,
+			);
+			path = WorkoutScreen;
+			sourceTree = "<group>";
+		};
+		4F29886E2C23396900B2746F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4F2988412C203F6300B2746F /* GeneratedSetList.swift */,
+				4F29883B2C203AA400B2746F /* GeneratedSetRow.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4F29886F2C23398900B2746F /* AppFlow */ = {
+			isa = PBXGroup;
+			children = (
+				4F2988112C203A7B00B2746F /* iOSDevTestAppApp.swift */,
+				4F2988132C203A7B00B2746F /* ContentView.swift */,
+			);
+			path = AppFlow;
+			sourceTree = "<group>";
+		};
+		4F2988702C2339C000B2746F /* SetDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				4F2988472C20D4D200B2746F /* SetDetailView.swift */,
+			);
+			path = SetDetailView;
+			sourceTree = "<group>";
+		};
+		4F2988712C2339FD00B2746F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4F2988572C2211EE00B2746F /* Extension+View.swift */,
+				4F2988642C22F43E00B2746F /* RoundedCorner.swift */,
+				4F29883D2C203C8200B2746F /* Exercize.swift */,
+				4F2988592C222B8900B2746F /* Localisation.swift */,
+				4F2988672C23047F00B2746F /* Bebas_Neue */,
+				4F2988742C23434500B2746F /* Extension+UIFont.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4F2988722C233A0C00B2746F /* SettingsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4F29884D2C20E5C400B2746F /* SettingsView.swift */,
+			);
+			path = SettingsScreen;
+			sourceTree = "<group>";
+		};
+		4F2988762C235AB300B2746F /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				4F2988552C21FFAF00B2746F /* TabBarButton.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		4F2988772C235AC100B2746F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4F29885D2C2233B300B2746F /* TabBarItem.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +394,7 @@
 			files = (
 				4F2988192C203A7C00B2746F /* Preview Assets.xcassets in Resources */,
 				4F2988162C203A7C00B2746F /* Assets.xcassets in Resources */,
+				4F2988682C23047F00B2746F /* BebasNeue-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,16 +422,25 @@
 				4F2988422C203F6300B2746F /* GeneratedSetList.swift in Sources */,
 				4F2988442C205A5E00B2746F /* ExersizeRow.swift in Sources */,
 				4F29883E2C203C8200B2746F /* Exercize.swift in Sources */,
-				4F29884C2C20E35200B2746F /* MainFlowView.swift in Sources */,
 				4F2988142C203A7B00B2746F /* ContentView.swift in Sources */,
 				4F2988562C21FFAF00B2746F /* TabBarButton.swift in Sources */,
-				4F2988402C203C9800B2746F /* SetModel.swift in Sources */,
+				4F29885E2C2233B300B2746F /* TabBarItem.swift in Sources */,
+				4F2988402C203C9800B2746F /* ExercizeSet.swift in Sources */,
 				4F2988482C20D4D200B2746F /* SetDetailView.swift in Sources */,
+				4F2988612C22379A00B2746F /* WorkoutView.swift in Sources */,
+				4F29886C2C23200D00B2746F /* WorkoutFlowView.swift in Sources */,
+				4F2988752C23434500B2746F /* Extension+UIFont.swift in Sources */,
 				4F2988122C203A7B00B2746F /* iOSDevTestAppApp.swift in Sources */,
+				4F29885C2C2231CB00B2746F /* TabBar.swift in Sources */,
+				4F3C0AA22C297223002867D0 /* TrainingModel.swift in Sources */,
+				4F29885A2C222B8900B2746F /* Localisation.swift in Sources */,
 				4F29883C2C203AA400B2746F /* GeneratedSetRow.swift in Sources */,
 				4F2988462C20CF5700B2746F /* ExersizeListView.swift in Sources */,
 				4F2988582C2211EE00B2746F /* Extension+View.swift in Sources */,
 				4F29884E2C20E5C400B2746F /* SettingsView.swift in Sources */,
+				4F2988652C22F43E00B2746F /* RoundedCorner.swift in Sources */,
+				4F2988792C23903F00B2746F /* TrainingView.swift in Sources */,
+				4F2988632C223C3D00B2746F /* AllSetsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,11 +607,15 @@
 				DEVELOPMENT_TEAM = M439QAGBDK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iOSDevTestApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "\"\"";
+				INFOPLIST_KEY_LSApplicationCategoryType = "BebasNeue-Regular.ttf";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -497,6 +623,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = testapp.iOSDevTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -514,11 +643,15 @@
 				DEVELOPMENT_TEAM = M439QAGBDK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iOSDevTestApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "\"\"";
+				INFOPLIST_KEY_LSApplicationCategoryType = "BebasNeue-Regular.ttf";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -526,6 +659,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = testapp.iOSDevTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

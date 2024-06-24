@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct GeneratedSetList: View {
-    let generatedSets: [SetModel]
+    let generatedSets: [ExercizeSet]
+    let onSelectedSet: (ExercizeSet) -> Void
+
     var body: some View {
         ScrollView {
             ForEach(generatedSets) { set in
                 Button(action: {
-
+                    onSelectedSet(set)
                 }, label: {
                     GeneratedSetRow(exersizeSet: set)
                 })
@@ -21,9 +23,4 @@ struct GeneratedSetList: View {
             .padding()
         }
     }
-}
-
-
-#Preview {
-    GeneratedSetList(generatedSets: setsArray)
 }

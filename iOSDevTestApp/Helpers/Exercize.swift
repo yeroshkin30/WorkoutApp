@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - Exercise Model
-struct Exercise: Identifiable {
+struct Exercise: Identifiable, Hashable {
     let id: UUID = .init()
     let name: String
     let repeatsCount: String

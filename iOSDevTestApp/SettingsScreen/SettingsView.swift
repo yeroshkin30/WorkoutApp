@@ -11,26 +11,26 @@ struct SettingsView: View {
     var body: some View {
         VStack(alignment: .leading) {
 
-            Text("SETTINGS")
+            Text("Settings".uppercased())
                 .font(.system(size: 32))
                 .foregroundStyle(Color.white)
                 .padding()
-            Rectangle()
-                .fill(Color.white)
-                .frame(height: 1)
-            List {
-                SettingsRow(image: Image("leaf"), text: "Privacy Policy")
-                    .listRowBackground(Color.clear)
-                    .listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
-                SettingsRow(image: Image("leaf"), text: "Privacy Policy")
-                    .listRowBackground(Color.clear)
-                    .listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
 
+            VStack(spacing: 0){
+                SettingsRow(image: Image(.privacyPolicy), text: "Privacy Policy")
+                Rectangle()
+                    .fill(Color.white.opacity(0.2))
+                    .frame(height: 1)
+                    .padding(.horizontal, 16)
+                SettingsRow(image: Image(.termOfUse), text: "Privacy Policy")
             }
-            .listStyle(.plain)
+            .background(.rowBackground)
             .clipShape(RoundedRectangle(cornerRadius: 10))
+            .padding()
+            Spacer()
         }
-        .background(Color.backgroundMain)
+        .frame(maxHeight: .infinity)
+        .background(.backgroundMain)
     }
 }
 
@@ -53,7 +53,6 @@ struct SettingsRow: View {
                 .foregroundStyle(.white)
         }
         .padding()
-        .background(.rowBackground)
     }
 }
 

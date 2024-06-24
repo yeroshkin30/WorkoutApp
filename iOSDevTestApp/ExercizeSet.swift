@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - SetModel
-struct SetModel: Identifiable {
+struct ExercizeSet: Identifiable, Hashable {
     let id: UUID = .init()
     let name: String
     let duration: Int
@@ -122,14 +122,14 @@ let exercises = [
 ]
 
 // Function to generate a random set of exercises
-func generateRandomSet(name: String, duration: Int, exercisesCount: Int) -> SetModel {
+func generateRandomSet(name: String, duration: Int, exercisesCount: Int) -> ExercizeSet {
     let shuffledExercises = exercises.shuffled()
     let selectedExercises = Array(shuffledExercises.prefix(exercisesCount))
-    return SetModel(name: name, duration: duration, exercisesCount: exercisesCount, exercises: selectedExercises)
+    return ExercizeSet(name: name, duration: duration, exercisesCount: exercisesCount, exercises: selectedExercises)
 }
 
 // Generate an array of sets
-let setsArray: [SetModel] = [
+let setsArray: [ExercizeSet] = [
     generateRandomSet(name: "Generated Set 1", duration: 30, exercisesCount: 10),
     generateRandomSet(name: "Generated Set 2", duration: 22, exercisesCount: 12),
     generateRandomSet(name: "Generated Set 3", duration: 35, exercisesCount: 14),
