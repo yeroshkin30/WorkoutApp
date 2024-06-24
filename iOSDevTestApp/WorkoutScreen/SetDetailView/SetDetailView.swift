@@ -44,7 +44,7 @@ struct SetDetailView: View {
                         .background(Color.white.opacity(0.2))
                         .clipShape(RoundedRectangle(cornerRadius: 8))
                 }
-                ExersizeListView(exercizes: exercises)
+                ExercizeListView(exercizes: exercises)
             }
             .padding()
             .padding(.top, 30)

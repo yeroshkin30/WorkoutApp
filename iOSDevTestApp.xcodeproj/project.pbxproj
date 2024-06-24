@@ -11,7 +11,6 @@
 		4F2988142C203A7B00B2746F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988132C203A7B00B2746F /* ContentView.swift */; };
 		4F2988162C203A7C00B2746F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F2988152C203A7C00B2746F /* Assets.xcassets */; };
 		4F2988192C203A7C00B2746F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F2988182C203A7C00B2746F /* Preview Assets.xcassets */; };
-		4F2988232C203A7D00B2746F /* iOSDevTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988222C203A7D00B2746F /* iOSDevTestAppTests.swift */; };
 		4F29882D2C203A7D00B2746F /* iOSDevTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F29882C2C203A7D00B2746F /* iOSDevTestAppUITests.swift */; };
 		4F29882F2C203A7D00B2746F /* iOSDevTestAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F29882E2C203A7D00B2746F /* iOSDevTestAppUITestsLaunchTests.swift */; };
 		4F29883C2C203AA400B2746F /* GeneratedSetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F29883B2C203AA400B2746F /* GeneratedSetRow.swift */; };
@@ -19,7 +18,7 @@
 		4F2988402C203C9800B2746F /* ExercizeSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F29883F2C203C9800B2746F /* ExercizeSet.swift */; };
 		4F2988422C203F6300B2746F /* GeneratedSetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988412C203F6300B2746F /* GeneratedSetList.swift */; };
 		4F2988442C205A5E00B2746F /* ExersizeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988432C205A5E00B2746F /* ExersizeRow.swift */; };
-		4F2988462C20CF5700B2746F /* ExersizeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988452C20CF5700B2746F /* ExersizeListView.swift */; };
+		4F2988462C20CF5700B2746F /* ExercizeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988452C20CF5700B2746F /* ExercizeListView.swift */; };
 		4F2988482C20D4D200B2746F /* SetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988472C20D4D200B2746F /* SetDetailView.swift */; };
 		4F29884E2C20E5C400B2746F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F29884D2C20E5C400B2746F /* SettingsView.swift */; };
 		4F2988562C21FFAF00B2746F /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988552C21FFAF00B2746F /* TabBarButton.swift */; };
@@ -34,7 +33,10 @@
 		4F29886C2C23200D00B2746F /* WorkoutFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F29886B2C23200D00B2746F /* WorkoutFlowView.swift */; };
 		4F2988752C23434500B2746F /* Extension+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988742C23434500B2746F /* Extension+UIFont.swift */; };
 		4F2988792C23903F00B2746F /* TrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988782C23903E00B2746F /* TrainingView.swift */; };
-		4F3C0AA22C297223002867D0 /* TrainingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3C0AA12C297222002867D0 /* TrainingModel.swift */; };
+		4F3C0AA32C297321002867D0 /* iOSDevTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988222C203A7D00B2746F /* iOSDevTestAppTests.swift */; };
+		4F3C0AA52C2978EC002867D0 /* StopWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3C0AA42C2978EC002867D0 /* StopWatchView.swift */; };
+		4F3C0AA72C29935A002867D0 /* TrainingFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3C0AA62C29935A002867D0 /* TrainingFlowView.swift */; };
+		4F3C0AA92C29DD16002867D0 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3C0AA82C29DD16002867D0 /* Extension+String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +72,7 @@
 		4F29883F2C203C9800B2746F /* ExercizeSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercizeSet.swift; sourceTree = "<group>"; };
 		4F2988412C203F6300B2746F /* GeneratedSetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedSetList.swift; sourceTree = "<group>"; };
 		4F2988432C205A5E00B2746F /* ExersizeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExersizeRow.swift; sourceTree = "<group>"; };
-		4F2988452C20CF5700B2746F /* ExersizeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExersizeListView.swift; sourceTree = "<group>"; };
+		4F2988452C20CF5700B2746F /* ExercizeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercizeListView.swift; sourceTree = "<group>"; };
 		4F2988472C20D4D200B2746F /* SetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetDetailView.swift; sourceTree = "<group>"; };
 		4F29884D2C20E5C400B2746F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		4F2988552C21FFAF00B2746F /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
@@ -86,7 +88,9 @@
 		4F2988732C233F8A00B2746F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4F2988742C23434500B2746F /* Extension+UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIFont.swift"; sourceTree = "<group>"; };
 		4F2988782C23903E00B2746F /* TrainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingView.swift; sourceTree = "<group>"; };
-		4F3C0AA12C297222002867D0 /* TrainingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingModel.swift; sourceTree = "<group>"; };
+		4F3C0AA42C2978EC002867D0 /* StopWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchView.swift; sourceTree = "<group>"; };
+		4F3C0AA62C29935A002867D0 /* TrainingFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingFlowView.swift; sourceTree = "<group>"; };
+		4F3C0AA82C29DD16002867D0 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,7 +165,6 @@
 		4F2988212C203A7D00B2746F /* iOSDevTestAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				4F2988222C203A7D00B2746F /* iOSDevTestAppTests.swift */,
 			);
 			path = iOSDevTestAppTests;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			children = (
 				4F29882C2C203A7D00B2746F /* iOSDevTestAppUITests.swift */,
 				4F29882E2C203A7D00B2746F /* iOSDevTestAppUITestsLaunchTests.swift */,
+				4F2988222C203A7D00B2746F /* iOSDevTestAppTests.swift */,
 			);
 			path = iOSDevTestAppUITests;
 			sourceTree = "<group>";
@@ -179,7 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				4F2988432C205A5E00B2746F /* ExersizeRow.swift */,
-				4F2988452C20CF5700B2746F /* ExersizeListView.swift */,
+				4F2988452C20CF5700B2746F /* ExercizeListView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -217,7 +221,8 @@
 				4F29886B2C23200D00B2746F /* WorkoutFlowView.swift */,
 				4F2988602C22379A00B2746F /* WorkoutView.swift */,
 				4F2988782C23903E00B2746F /* TrainingView.swift */,
-				4F3C0AA12C297222002867D0 /* TrainingModel.swift */,
+				4F3C0AA42C2978EC002867D0 /* StopWatchView.swift */,
+				4F3C0AA62C29935A002867D0 /* TrainingFlowView.swift */,
 				4F2988492C20D57D00B2746F /* Helpers */,
 				4F29884A2C20D58700B2746F /* GeneratedSet */,
 				4F2988702C2339C000B2746F /* SetDetailView */,
@@ -260,6 +265,7 @@
 				4F2988592C222B8900B2746F /* Localisation.swift */,
 				4F2988672C23047F00B2746F /* Bebas_Neue */,
 				4F2988742C23434500B2746F /* Extension+UIFont.swift */,
+				4F3C0AA82C29DD16002867D0 /* Extension+String.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -427,15 +433,17 @@
 				4F29885E2C2233B300B2746F /* TabBarItem.swift in Sources */,
 				4F2988402C203C9800B2746F /* ExercizeSet.swift in Sources */,
 				4F2988482C20D4D200B2746F /* SetDetailView.swift in Sources */,
+				4F3C0AA72C29935A002867D0 /* TrainingFlowView.swift in Sources */,
 				4F2988612C22379A00B2746F /* WorkoutView.swift in Sources */,
+				4F3C0AA92C29DD16002867D0 /* Extension+String.swift in Sources */,
 				4F29886C2C23200D00B2746F /* WorkoutFlowView.swift in Sources */,
 				4F2988752C23434500B2746F /* Extension+UIFont.swift in Sources */,
 				4F2988122C203A7B00B2746F /* iOSDevTestAppApp.swift in Sources */,
+				4F3C0AA52C2978EC002867D0 /* StopWatchView.swift in Sources */,
 				4F29885C2C2231CB00B2746F /* TabBar.swift in Sources */,
-				4F3C0AA22C297223002867D0 /* TrainingModel.swift in Sources */,
 				4F29885A2C222B8900B2746F /* Localisation.swift in Sources */,
 				4F29883C2C203AA400B2746F /* GeneratedSetRow.swift in Sources */,
-				4F2988462C20CF5700B2746F /* ExersizeListView.swift in Sources */,
+				4F2988462C20CF5700B2746F /* ExercizeListView.swift in Sources */,
 				4F2988582C2211EE00B2746F /* Extension+View.swift in Sources */,
 				4F29884E2C20E5C400B2746F /* SettingsView.swift in Sources */,
 				4F2988652C22F43E00B2746F /* RoundedCorner.swift in Sources */,
@@ -448,7 +456,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F2988232C203A7D00B2746F /* iOSDevTestAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +465,7 @@
 			files = (
 				4F29882F2C203A7D00B2746F /* iOSDevTestAppUITestsLaunchTests.swift in Sources */,
 				4F29882D2C203A7D00B2746F /* iOSDevTestAppUITests.swift in Sources */,
+				4F3C0AA32C297321002867D0 /* iOSDevTestAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

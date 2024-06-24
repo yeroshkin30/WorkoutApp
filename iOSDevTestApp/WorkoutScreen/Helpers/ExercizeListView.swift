@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ExersizeListView: View {
+struct ExercizeListView: View {
     let exercizes: [Exercise]
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
@@ -29,6 +29,6 @@ struct ExersizeListView: View {
 }
 
 #Preview {
-    ExersizeListView(exercizes: exercises)
+    ExercizeListView(exercizes: exercises)
         .background(.backgroundMain)
 }
