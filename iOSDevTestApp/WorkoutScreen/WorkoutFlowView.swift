@@ -10,6 +10,7 @@ import SwiftUI
 struct WorkoutFlowView: View {
     @State var sets: [ExercizeSet] = setsArray
     @State private var path: [Destination] = []
+    @State private var sheetDestination: Destination?
 
     var body: some View {
         NavigationStack(path: $path) {
@@ -19,6 +20,8 @@ struct WorkoutFlowView: View {
             .background(.backgroundMain)
             .navigationDestination(for: Destination.self, destination: destinationView)
         }
+        .fullScreenCover(item: $sheetDestination, content: destinationView)
+
     }
 
     @ViewBuilder
@@ -28,17 +31,29 @@ struct WorkoutFlowView: View {
             AllSetsView(sets: sets) { event in
                 handleAllSetViewEvent(with: event)
             }
-        case .setsDetail(let exercizesSet):
-            SetDetailView(exercizeSet: exercizesSet) { event in
+        case .setsDetail(let exercisesSet):
+            SetDetailView(exercizeSet: exercisesSet) { event in
                 handleSetDetailViewEvent(with: event)
+            }
+        case .startTraining(let exerciseSet):
+            TrainingFlowView(exerciseSet: exerciseSet) {
+                withoutAnimation {
+                    path.removeAll()
+                }
+                sheetDestination = nil
             }
         }
     }
-    enum Destination: Hashable {
+
+    enum Destination: Hashable, Identifiable {
+        var id: UUID {
+            .init()
+        }
+
         case allSets
         case setsDetail(ExercizeSet)
+        case startTraining(ExercizeSet)
     }
-
 }
 
 // MARK: - Event handlers
@@ -69,7 +84,7 @@ private extension WorkoutFlowView {
         case .backButtonTap:
             path.removeLast()
         case .startTraining(let exersizeSet):
-            return
+            sheetDestination = .startTraining(exersizeSet)
         }
     }
 }

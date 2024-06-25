@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct FinishedExercize {
+    let id: UUID = .init()
     let exercize: Exercise
     let trainingTime: Int
 }
@@ -22,8 +23,8 @@ struct TrainingView: View {
     @State private var timeElapsed: Int = 0
     @State private var isRunning: Bool = false
     @State private var timer: Timer?
-
     @State var viewState: TrainingState
+    @State var alertPresented = false
     let onEvent: (Event) -> Void
 
     init(firstExercise: Exercise, allExercises: [Exercise], onEvent: @escaping (Event) -> Void) {
@@ -41,13 +42,11 @@ struct TrainingView: View {
     var body: some View {
         VStack {
             ExercizeDescriptionView(exercise: viewState.currentExercise)
-                .padding(.top, 44)
             Spacer()
             ZStack {
                 // Outer glowing circle
                 Circle()
                     .stroke(Color.red.opacity(0.8), lineWidth: 10)
-                    .frame(width: 300, height: 300)
                     .shadow(color: Color.red.opacity(0.7), radius: 10, x: 0, y: 0)
 
                 // Timer text
@@ -55,48 +54,47 @@ struct TrainingView: View {
                     .font(.customFont(name: .bebasNeue, size: 44))
                     .foregroundColor(.white)
             }
+            .padding(.horizontal, 50)
             Spacer()
             nextExerciseView
-                .padding(.bottom, 30)
 
-//            HStack {
-//                Button {
-//                    isRunning.toggle()
-//                    if isRunning {
-//                        startTimer()
-//                    } else {
-//                        timer?.invalidate()
-//                    }
-//                } label: {
-//                    Image(systemName: isRunning ? "pause.fill" : "play.fill")
-//                        .font(.system(size: 24))
-//                        .padding()
-//                        .background(Color.black)
-//                        .foregroundColor(.white)
-//                        .clipShape(Circle())
-//                        .overlay(
-//                            Circle()
-//                                .stroke(Color.customRed, lineWidth: 2)
-//                        )
-//                }
-//                .padding()
-//
-//                Spacer()
-//
-//                Button {
-//                    handeNextButtonTap()
-//                } label: {
-//                    Text(viewState.nextExercise != nil ? "NEXT" : "FINISH")
-//                        .font(.customFont(name: .bebasNeue, size: 24))
-//                        .padding()
-//                        .foregroundColor(.white)
-//                        .frame(maxWidth: .infinity)
-//                        .background(.customRed, in: RoundedRectangle(cornerRadius: 12))
-//                }
-//            }
-//            .padding(.horizontal)
-//            .padding(.bottom, 20)
-//            .frame(height: 54)
+            Spacer()
+            HStack(spacing: 8) {
+                Button {
+                    isRunning.toggle()
+                    if isRunning {
+                        startTimer()
+                    } else {
+                        timer?.invalidate()
+                    }
+                } label: {
+                    Image(systemName: isRunning ? "pause.fill" : "play.fill")
+                        .font(.system(size: 24))
+                        .padding()
+                        .background(Color.black)
+                        .foregroundColor(.white)
+                        .clipShape(Circle())
+                        .overlay(
+                            Circle()
+                                .stroke(Color.customRed, lineWidth: 2)
+                        )
+                }
+
+                Spacer()
+
+                Button {
+                    handeNextButtonTap()
+                } label: {
+                    Text(viewState.nextExercise != nil ? "NEXT" : "FINISH")
+                        .font(.customFont(name: .bebasNeue, size: 24))
+                        .padding()
+                        .foregroundColor(.white)
+                        .frame(maxWidth: .infinity)
+                        .background(.customRed, in: RoundedRectangle(cornerRadius: 12))
+                }
+            }
+            .padding(.horizontal)
+            .padding(.bottom, 10)
         }
         .background(.backgroundMain)
         .toolbar {
@@ -113,13 +111,19 @@ struct TrainingView: View {
             }
 
             ToolbarItem(placement: .topBarTrailing) {
-                Button { onEvent(.closeButtonTap) } label: {
+                Button { alertPresented = true } label: {
                     Image(.xmark)
                         .foregroundStyle(.white)
                         .frame(width: 44, height: 44)
                         .background(.white.opacity(0.1), in: RoundedRectangle(cornerRadius: 16))
                 }
             }
+        }
+        .alert("Alert", isPresented: $alertPresented) {
+            Button("Finish", role: .destructive) { onEvent(.closeButtonTap) }
+            Button("Cancel", role: .cancel) { }
+        } message: {
+            Text("read this")
         }
     }
 

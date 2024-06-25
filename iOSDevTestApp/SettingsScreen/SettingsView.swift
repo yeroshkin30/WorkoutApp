@@ -17,12 +17,16 @@ struct SettingsView: View {
                 .padding()
 
             VStack(spacing: 0){
-                SettingsRow(image: Image(.privacyPolicy), text: "Privacy Policy")
+                Button { } label: {
+                    SettingsRow(image: Image(.privacyPolicy), text: "Privacy Policy")
+                }
                 Rectangle()
                     .fill(Color.white.opacity(0.2))
                     .frame(height: 1)
                     .padding(.horizontal, 16)
-                SettingsRow(image: Image(.termOfUse), text: "Privacy Policy")
+                Button { } label: {
+                    SettingsRow(image: Image(.termOfUse), text: "Privacy Policy")
+                }
             }
             .background(.rowBackground)
             .clipShape(RoundedRectangle(cornerRadius: 10))

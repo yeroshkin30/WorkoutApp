@@ -78,7 +78,7 @@ struct SetDetailView: View {
 extension SetDetailView {
     var startButton: some View {
 
-        Button {} label: {
+        Button { onEvent(.startTraining(exercizeSet)) } label: {
             HStack {
                 Spacer()
                 Text("Start Trainig".uppercased())
