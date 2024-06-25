@@ -14,21 +14,20 @@ struct WorkoutFlowView: View {
 
     var body: some View {
         NavigationStack(path: $path) {
-            WorkoutView(sets: sets) { event in
+            WorkoutView(generatedSets: sets) { event in
                 handleWorkoutViewEvents(with: event)
             }
             .background(.backgroundMain)
             .navigationDestination(for: Destination.self, destination: destinationView)
         }
         .fullScreenCover(item: $sheetDestination, content: destinationView)
-
     }
 
     @ViewBuilder
     func destinationView(for destination: Destination) -> some View {
         switch destination {
         case .allSets:
-            AllSetsView(sets: sets) { event in
+            GeneratedSetView(generatedSets: sets) { event in
                 handleAllSetViewEvent(with: event)
             }
         case .setsDetail(let exercisesSet):
@@ -70,7 +69,7 @@ private extension WorkoutFlowView {
         }
     }
 
-    func handleAllSetViewEvent(with event: AllSetsView.Event) {
+    func handleAllSetViewEvent(with event: GeneratedSetView.Event) {
         switch event {
         case .backButtonTaped:
             path.removeLast()

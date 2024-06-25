@@ -40,9 +40,23 @@ struct TrainingView: View {
     // MARK: - Initialisers
 
     var body: some View {
-        VStack {
-            ExercizeDescriptionView(exercise: viewState.currentExercise)
-            Spacer()
+        ZStack {
+            VStack {
+                ExercizeDescriptionView(exercise: viewState.currentExercise)
+                Spacer()
+
+                nextExerciseInfoView
+                    .padding(.bottom, 30)
+
+                HStack(spacing: 8) {
+                    playPauseButton
+                    Spacer()
+                    nextButton
+                }
+                .padding(.horizontal)
+                .padding(.bottom, 10)
+            }
+
             ZStack {
                 // Outer glowing circle
                 Circle()
@@ -55,75 +69,24 @@ struct TrainingView: View {
                     .foregroundColor(.white)
             }
             .padding(.horizontal, 50)
-            Spacer()
-            nextExerciseView
-
-            Spacer()
-            HStack(spacing: 8) {
-                Button {
-                    isRunning.toggle()
-                    if isRunning {
-                        startTimer()
-                    } else {
-                        timer?.invalidate()
-                    }
-                } label: {
-                    Image(systemName: isRunning ? "pause.fill" : "play.fill")
-                        .font(.system(size: 24))
-                        .padding()
-                        .background(Color.black)
-                        .foregroundColor(.white)
-                        .clipShape(Circle())
-                        .overlay(
-                            Circle()
-                                .stroke(Color.customRed, lineWidth: 2)
-                        )
-                }
-
-                Spacer()
-
-                Button {
-                    handeNextButtonTap()
-                } label: {
-                    Text(viewState.nextExercise != nil ? "NEXT" : "FINISH")
-                        .font(.customFont(name: .bebasNeue, size: 24))
-                        .padding()
-                        .foregroundColor(.white)
-                        .frame(maxWidth: .infinity)
-                        .background(.customRed, in: RoundedRectangle(cornerRadius: 12))
-                }
-            }
-            .padding(.horizontal)
-            .padding(.bottom, 10)
         }
+        .background(
+            Image(.background)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .ignoresSafeArea(edges: .top)
+
+
+        )
         .background(.backgroundMain)
         .toolbar {
-            ToolbarItem(placement: .topBarLeading) {
-                HStack(alignment: .firstTextBaseline, spacing: 0) {
-                    Text("\(viewState.curentExerciseNumber)")
-                        .font(.system(size: 28, weight: .bold))
-                        .foregroundColor(.white)
-
-                    Text("/\(viewState.totalExercise)")
-                        .font(.system(size: 16, weight: .regular))
-                        .foregroundColor(.white)
-                }
-            }
-
-            ToolbarItem(placement: .topBarTrailing) {
-                Button { alertPresented = true } label: {
-                    Image(.xmark)
-                        .foregroundStyle(.white)
-                        .frame(width: 44, height: 44)
-                        .background(.white.opacity(0.1), in: RoundedRectangle(cornerRadius: 16))
-                }
-            }
+           navigationBarButtons
         }
         .alert("Alert", isPresented: $alertPresented) {
             Button("Finish", role: .destructive) { onEvent(.closeButtonTap) }
             Button("Cancel", role: .cancel) { }
         } message: {
-            Text("read this")
+            Text("Are you sure you want to finish the workout?")
         }
     }
 
@@ -150,12 +113,36 @@ struct TrainingView: View {
 }
 
 extension TrainingView {
-    var nextExerciseView: some View {
+    @ToolbarContentBuilder
+    var navigationBarButtons: some ToolbarContent {
+        ToolbarItem(placement: .topBarLeading) {
+            HStack(alignment: .firstTextBaseline, spacing: 0) {
+                Text("\(viewState.curentExerciseNumber)")
+                    .font(.system(size: 28, weight: .bold))
+                    .foregroundColor(.white)
+
+                Text("/\(viewState.totalExercise)")
+                    .font(.system(size: 16, weight: .regular))
+                    .foregroundColor(.white)
+            }
+        }
+
+        ToolbarItem(placement: .topBarTrailing) {
+            Button { alertPresented = true } label: {
+                Image(.xmark)
+                    .foregroundStyle(.white)
+                    .frame(width: 44, height: 44)
+                    .background(.white.opacity(0.1), in: RoundedRectangle(cornerRadius: 16))
+            }
+        }
+    }
+
+    var nextExerciseInfoView: some View {
         HStack {
             Text("Next:")
                 .font(.customFont(name: .bebasNeue, size: 16))
                 .foregroundColor(.gray)
-            Text(viewState.nextExercise?.name ?? "")
+            Text(viewState.nextExercise?.name ?? "FINISH")
                 .font(.customFont(name: .bebasNeue, size: 20))
                 .foregroundColor(.white)
             Spacer()
@@ -169,7 +156,41 @@ extension TrainingView {
                     .stroke(.white.opacity(0.1), lineWidth: 1)
             )
         .padding(.horizontal)
-        .opacity(viewState.nextExercise != nil ? 1 : 0)
+    }
+
+    var playPauseButton: some View {
+        Button {
+            isRunning.toggle()
+            if isRunning {
+                startTimer()
+            } else {
+                timer?.invalidate()
+            }
+        } label: {
+            Image(systemName: isRunning ? "pause.fill" : "play.fill")
+                .font(.system(size: 24))
+                .padding()
+                .background(Color.black)
+                .foregroundColor(.white)
+                .clipShape(Circle())
+                .overlay(
+                    Circle()
+                        .stroke(Color.customRed, lineWidth: 2)
+                )
+        }
+    }
+
+    var nextButton: some View {
+        Button {
+            handeNextButtonTap()
+        } label: {
+            Text(viewState.nextExercise != nil ? "NEXT" : "FINISH")
+                .font(.customFont(name: .bebasNeue, size: 24))
+                .padding()
+                .foregroundColor(.white)
+                .frame(maxWidth: .infinity)
+                .background(.customRed, in: RoundedRectangle(cornerRadius: 12))
+        }
     }
 
     struct TrainingState {
@@ -225,3 +246,7 @@ struct ExercizeDescriptionView: View {
         .padding()
     }
 }
+
+#Preview(body: {
+    TrainingView(firstExercise: setsArray.first!.exercises.first!, allExercises: setsArray.first!.exercises, onEvent: { _ in })
+})

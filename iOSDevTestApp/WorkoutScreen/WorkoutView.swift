@@ -14,16 +14,21 @@ struct WorkoutView: View {
         case exersizeSetChosen(ExercizeSet)
     }
 
-    @State var sets: [ExercizeSet]
+    @State var generatedSets: [ExercizeSet]
     let onEvent: (Event) -> Void
 
     var body: some View {
         VStack {
             headerView
-            VStack(alignment: .leading) {
-                GeneratedSetList(generatedSets: sets) { exersizeSet in
-                    onEvent(.exersizeSetChosen(exersizeSet))
+            ScrollView {
+                ForEach(generatedSets) { exercizeSet in
+                    Button(action: {
+                        onEvent(.exersizeSetChosen(exercizeSet))
+                    }, label: {
+                        GeneratedSetRow(exersizeSet: exercizeSet)
+                    })
                 }
+                .padding()
             }
         }
         .background(.backgroundMain)
