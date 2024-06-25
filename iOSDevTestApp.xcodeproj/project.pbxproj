@@ -111,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				4F2988102C203A7B00B2746F /* iOSDevTestApp */,
-				4F2988212C203A7D00B2746F /* iOSDevTestAppTests */,
 				4F29882B2C203A7D00B2746F /* iOSDevTestAppUITests */,
 				4F29880F2C203A7B00B2746F /* Products */,
 			);
@@ -149,13 +148,6 @@
 				4F2988182C203A7C00B2746F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		4F2988212C203A7D00B2746F /* iOSDevTestAppTests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = iOSDevTestAppTests;
 			sourceTree = "<group>";
 		};
 		4F29882B2C203A7D00B2746F /* iOSDevTestAppUITests */ = {
