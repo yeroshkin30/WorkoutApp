@@ -20,23 +20,23 @@ struct ContentView: View {
 
     private func setupNavigationBarAppearance() {
 
-        let standartAppearence = UINavigationBarAppearance()
-        standartAppearence.configureWithDefaultBackground()
-        standartAppearence.backgroundColor = .clear
-        standartAppearence.titleTextAttributes = [.foregroundColor: UIColor.white]
+        let standardAppearance = UINavigationBarAppearance()
+        standardAppearance.configureWithDefaultBackground()
+        standardAppearance.backgroundColor = .clear
+        standardAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
 //        appearence.setBackIndicatorImage(.backButtonIcon.withRenderingMode(.alwaysOriginal), transitionMaskImage: .backButtonIcon)
 //        appearence.shadowColor = nil
 //        appearence.backButtonAppearance.normal.titlePositionAdjustment = .init(horizontal: -200, vertical: -200)
 
-        let scrollAppearence = UINavigationBarAppearance()
-        scrollAppearence.configureWithTransparentBackground()
-        scrollAppearence.backgroundColor = .clear
-        scrollAppearence.titleTextAttributes = [.foregroundColor: UIColor.white]
+        let scrollAppearance = UINavigationBarAppearance()
+        scrollAppearance.configureWithTransparentBackground()
+        scrollAppearance.backgroundColor = .clear
+        scrollAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
 
         // Apply the appearance settings to all navigation bars
-        UINavigationBar.appearance().standardAppearance = standartAppearence
-        UINavigationBar.appearance().scrollEdgeAppearance = scrollAppearence
-        UINavigationBar.appearance().compactAppearance = standartAppearence
+        UINavigationBar.appearance().standardAppearance = standardAppearance
+        UINavigationBar.appearance().scrollEdgeAppearance = scrollAppearance
+        UINavigationBar.appearance().compactAppearance = standardAppearance
     }
 }
 

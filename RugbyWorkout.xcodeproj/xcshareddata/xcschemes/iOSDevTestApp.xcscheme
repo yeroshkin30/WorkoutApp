@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4F29880D2C203A7B00B2746F"
-               BuildableName = "iOSDevTestApp.app"
-               BlueprintName = "iOSDevTestApp"
-               ReferencedContainer = "container:iOSDevTestApp.xcodeproj">
+               BuildableName = "RugbyWorkout.app"
+               BlueprintName = "RugbyWorkout"
+               ReferencedContainer = "container:RugbyWorkout.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -38,7 +38,7 @@
                BlueprintIdentifier = "4F29881D2C203A7D00B2746F"
                BuildableName = "iOSDevTestAppTests.xctest"
                BlueprintName = "iOSDevTestAppTests"
-               ReferencedContainer = "container:iOSDevTestApp.xcodeproj">
+               ReferencedContainer = "container:RugbyWorkout.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4F2988272C203A7D00B2746F"
-               BuildableName = "iOSDevTestAppUITests.xctest"
-               BlueprintName = "iOSDevTestAppUITests"
-               ReferencedContainer = "container:iOSDevTestApp.xcodeproj">
+               BuildableName = "RugbyWorkoutUITests.xctest"
+               BlueprintName = "RugbyWorkoutUITests"
+               ReferencedContainer = "container:RugbyWorkout.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -69,9 +69,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4F29880D2C203A7B00B2746F"
-            BuildableName = "iOSDevTestApp.app"
-            BlueprintName = "iOSDevTestApp"
-            ReferencedContainer = "container:iOSDevTestApp.xcodeproj">
+            BuildableName = "RugbyWorkout.app"
+            BlueprintName = "RugbyWorkout"
+            ReferencedContainer = "container:RugbyWorkout.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -86,9 +86,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4F29880D2C203A7B00B2746F"
-            BuildableName = "iOSDevTestApp.app"
-            BlueprintName = "iOSDevTestApp"
-            ReferencedContainer = "container:iOSDevTestApp.xcodeproj">
+            BuildableName = "RugbyWorkout.app"
+            BlueprintName = "RugbyWorkout"
+            ReferencedContainer = "container:RugbyWorkout.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

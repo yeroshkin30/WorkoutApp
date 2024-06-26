@@ -101,7 +101,7 @@ extension TrainingResultView {
                     .font(.customFont(name: .bebasNeue, size: 20))
                     .foregroundStyle(.white)
                 Spacer()
-                Image(.checkmark)
+                Image(.checkmarkIcon)
             }
             .padding()
             .background(.customRed, in: RoundedRectangle(cornerRadius: 10))
