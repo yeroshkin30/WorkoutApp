@@ -8,17 +8,17 @@
 import SwiftUI
 
 struct AppFlowView: View {
-    @State var showOnboarding = true
+    @State var showOnboarding = false
     @State private var isAnimating = false
-    @State private var preloaderActive = true
+    @State private var preloadActive = false
     let circleCount = 8
     let circleSize: CGFloat = 6.5
     let animationDuration: Double = 1.2
 
     var body: some View {
         ZStack {
-            if preloaderActive {
-                preloaderView
+            if preloadActive {
+                preloadView
             } else {
                 if showOnboarding {
                     OnboardingView() {
@@ -37,7 +37,7 @@ struct AppFlowView: View {
 
 extension AppFlowView {
 
-    var preloaderView: some View {
+    var preloadView: some View {
         ZStack {
             Image(.background)
                 .resizable()
@@ -60,7 +60,7 @@ extension AppFlowView {
                 isAnimating = true
                 Task {
                     try await Task.sleep(for: .seconds(3))
-                    preloaderActive = false
+                    preloadActive = false
                 }
             }
         }

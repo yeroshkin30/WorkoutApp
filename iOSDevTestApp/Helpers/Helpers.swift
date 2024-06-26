@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 @discardableResult
 func withoutAnimation<Result>(_ body: () throws -> Result) rethrows -> Result {
     var transaction = SwiftUI.Transaction()

@@ -22,7 +22,6 @@
 		4F29884E2C20E5C400B2746F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F29884D2C20E5C400B2746F /* SettingsView.swift */; };
 		4F2988562C21FFAF00B2746F /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988552C21FFAF00B2746F /* TabBarButton.swift */; };
 		4F2988582C2211EE00B2746F /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988572C2211EE00B2746F /* Extension+View.swift */; };
-		4F29885A2C222B8900B2746F /* Localisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988592C222B8900B2746F /* Localisation.swift */; };
 		4F29885C2C2231CB00B2746F /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F29885B2C2231CB00B2746F /* TabBar.swift */; };
 		4F29885E2C2233B300B2746F /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F29885D2C2233B300B2746F /* TabBarItem.swift */; };
 		4F2988612C22379A00B2746F /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988602C22379A00B2746F /* WorkoutView.swift */; };
@@ -41,6 +40,10 @@
 		4FB4F9482C2B869100E886D6 /* FinishedExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB4F9472C2B869100E886D6 /* FinishedExercise.swift */; };
 		4FB4F94A2C2C31C300E886D6 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB4F9492C2C31C300E886D6 /* OnboardingView.swift */; };
 		4FB4F94C2C2C385900E886D6 /* AppFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB4F94B2C2C385900E886D6 /* AppFlowView.swift */; };
+		4FB4F94F2C2C80B800E886D6 /* PolicyTermsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB4F94E2C2C80B800E886D6 /* PolicyTermsView.swift */; };
+		4FB4F9512C2C80DF00E886D6 /* SettingRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB4F9502C2C80DF00E886D6 /* SettingRowView.swift */; };
+		4FB4F9532C2C964400E886D6 /* ExerciseDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB4F9522C2C964400E886D6 /* ExerciseDescriptionView.swift */; };
+		4FB4F9582C2C9BCF00E886D6 /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB4F9572C2C9BCF00E886D6 /* CustomBackButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +75,6 @@
 		4F29884D2C20E5C400B2746F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		4F2988552C21FFAF00B2746F /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
 		4F2988572C2211EE00B2746F /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
-		4F2988592C222B8900B2746F /* Localisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localisation.swift; sourceTree = "<group>"; };
 		4F29885B2C2231CB00B2746F /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		4F29885D2C2233B300B2746F /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 		4F2988602C22379A00B2746F /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
@@ -91,6 +93,10 @@
 		4FB4F9472C2B869100E886D6 /* FinishedExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedExercise.swift; sourceTree = "<group>"; };
 		4FB4F9492C2C31C300E886D6 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		4FB4F94B2C2C385900E886D6 /* AppFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowView.swift; sourceTree = "<group>"; };
+		4FB4F94E2C2C80B800E886D6 /* PolicyTermsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyTermsView.swift; sourceTree = "<group>"; };
+		4FB4F9502C2C80DF00E886D6 /* SettingRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRowView.swift; sourceTree = "<group>"; };
+		4FB4F9522C2C964400E886D6 /* ExerciseDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDescriptionView.swift; sourceTree = "<group>"; };
+		4FB4F9572C2C9BCF00E886D6 /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,20 +166,11 @@
 			path = iOSDevTestAppUITests;
 			sourceTree = "<group>";
 		};
-		4F2988492C20D57D00B2746F /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				4F2988432C205A5E00B2746F /* ExersizeRow.swift */,
-				4F2988452C20CF5700B2746F /* ExercizeListView.swift */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
 		4F29884A2C20D58700B2746F /* GeneratedSet */ = {
 			isa = PBXGroup;
 			children = (
 				4F2988622C223C3D00B2746F /* GeneratedSetView.swift */,
-				4F29886E2C23396900B2746F /* Helpers */,
+				4F29883B2C203AA400B2746F /* GeneratedSetRow.swift */,
 			);
 			path = GeneratedSet;
 			sourceTree = "<group>";
@@ -202,18 +199,9 @@
 				4F29886B2C23200D00B2746F /* WorkoutFlowView.swift */,
 				4F2988602C22379A00B2746F /* WorkoutView.swift */,
 				4F29884A2C20D58700B2746F /* GeneratedSet */,
-				4F2988702C2339C000B2746F /* SetDetailView */,
-				4F2988492C20D57D00B2746F /* Helpers */,
+				4F2988702C2339C000B2746F /* SetDetail */,
 			);
 			path = WorkoutScreen;
-			sourceTree = "<group>";
-		};
-		4F29886E2C23396900B2746F /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				4F29883B2C203AA400B2746F /* GeneratedSetRow.swift */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		4F29886F2C23398900B2746F /* AppFlow */ = {
@@ -226,25 +214,24 @@
 			path = AppFlow;
 			sourceTree = "<group>";
 		};
-		4F2988702C2339C000B2746F /* SetDetailView */ = {
+		4F2988702C2339C000B2746F /* SetDetail */ = {
 			isa = PBXGroup;
 			children = (
 				4F2988472C20D4D200B2746F /* SetDetailView.swift */,
+				4F2988452C20CF5700B2746F /* ExercizeListView.swift */,
+				4F2988432C205A5E00B2746F /* ExersizeRow.swift */,
 			);
-			path = SetDetailView;
+			path = SetDetail;
 			sourceTree = "<group>";
 		};
 		4F2988712C2339FD00B2746F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				4F2988572C2211EE00B2746F /* Extension+View.swift */,
-				4F2988642C22F43E00B2746F /* RoundedCorner.swift */,
-				4F29883D2C203C8200B2746F /* Exercize.swift */,
-				4F2988592C222B8900B2746F /* Localisation.swift */,
-				4F2988672C23047F00B2746F /* Bebas_Neue */,
-				4F2988742C23434500B2746F /* Extension+UIFont.swift */,
-				4F3C0AA82C29DD16002867D0 /* Extension+String.swift */,
 				4FB4F9412C2B20AB00E886D6 /* Helpers.swift */,
+				4FB4F94D2C2C7D3400E886D6 /* Extensions */,
+				4F2988642C22F43E00B2746F /* RoundedCorner.swift */,
+				4F2988672C23047F00B2746F /* Bebas_Neue */,
+				4FB4F9572C2C9BCF00E886D6 /* CustomBackButton.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -253,6 +240,8 @@
 			isa = PBXGroup;
 			children = (
 				4F29884D2C20E5C400B2746F /* SettingsView.swift */,
+				4FB4F94E2C2C80B800E886D6 /* PolicyTermsView.swift */,
+				4FB4F9502C2C80DF00E886D6 /* SettingRowView.swift */,
 			);
 			path = SettingsScreen;
 			sourceTree = "<group>";
@@ -282,20 +271,11 @@
 			path = TrainingScreen;
 			sourceTree = "<group>";
 		};
-		4FB4F9432C2B283700E886D6 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				4FA88FC22C2A247C00141BA2 /* CompletedExerciseRow.swift */,
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
 		4FB4F9442C2B284600E886D6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4F2988782C23903E00B2746F /* TrainingView.swift */,
-				4FA88FBE2C2A206200141BA2 /* TrainingResultView.swift */,
-				4FB4F9432C2B283700E886D6 /* Helper */,
+				4FB4F9552C2C982800E886D6 /* TrainingView */,
+				4FB4F9562C2C983800E886D6 /* TrainingResultView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -303,6 +283,7 @@
 		4FB4F9452C2B386700E886D6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4F29883D2C203C8200B2746F /* Exercize.swift */,
 				4F29883F2C203C9800B2746F /* ExerciseSet.swift */,
 				4FB4F9472C2B869100E886D6 /* FinishedExercise.swift */,
 			);
@@ -320,6 +301,34 @@
 				4FB4F9492C2C31C300E886D6 /* OnboardingView.swift */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		4FB4F94D2C2C7D3400E886D6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4F2988572C2211EE00B2746F /* Extension+View.swift */,
+				4F2988742C23434500B2746F /* Extension+UIFont.swift */,
+				4F3C0AA82C29DD16002867D0 /* Extension+String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4FB4F9552C2C982800E886D6 /* TrainingView */ = {
+			isa = PBXGroup;
+			children = (
+				4F2988782C23903E00B2746F /* TrainingView.swift */,
+				4FB4F9522C2C964400E886D6 /* ExerciseDescriptionView.swift */,
+			);
+			path = TrainingView;
+			sourceTree = "<group>";
+		};
+		4FB4F9562C2C983800E886D6 /* TrainingResultView */ = {
+			isa = PBXGroup;
+			children = (
+				4FA88FBE2C2A206200141BA2 /* TrainingResultView.swift */,
+				4FA88FC22C2A247C00141BA2 /* CompletedExerciseRow.swift */,
+			);
+			path = TrainingResultView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -429,6 +438,8 @@
 				4F2988142C203A7B00B2746F /* ContentView.swift in Sources */,
 				4F2988562C21FFAF00B2746F /* TabBarButton.swift in Sources */,
 				4F29885E2C2233B300B2746F /* TabBarItem.swift in Sources */,
+				4FB4F94F2C2C80B800E886D6 /* PolicyTermsView.swift in Sources */,
+				4FB4F9532C2C964400E886D6 /* ExerciseDescriptionView.swift in Sources */,
 				4F2988402C203C9800B2746F /* ExerciseSet.swift in Sources */,
 				4FB4F9482C2B869100E886D6 /* FinishedExercise.swift in Sources */,
 				4F2988482C20D4D200B2746F /* SetDetailView.swift in Sources */,
@@ -438,16 +449,17 @@
 				4FB4F94A2C2C31C300E886D6 /* OnboardingView.swift in Sources */,
 				4F29886C2C23200D00B2746F /* WorkoutFlowView.swift in Sources */,
 				4FA88FC32C2A247C00141BA2 /* CompletedExerciseRow.swift in Sources */,
+				4FB4F9582C2C9BCF00E886D6 /* CustomBackButton.swift in Sources */,
 				4F2988752C23434500B2746F /* Extension+UIFont.swift in Sources */,
 				4F2988122C203A7B00B2746F /* iOSDevTestAppApp.swift in Sources */,
 				4F29885C2C2231CB00B2746F /* TabBar.swift in Sources */,
-				4F29885A2C222B8900B2746F /* Localisation.swift in Sources */,
 				4F29883C2C203AA400B2746F /* GeneratedSetRow.swift in Sources */,
 				4F2988462C20CF5700B2746F /* ExercizeListView.swift in Sources */,
 				4FB4F94C2C2C385900E886D6 /* AppFlowView.swift in Sources */,
 				4F2988582C2211EE00B2746F /* Extension+View.swift in Sources */,
 				4F29884E2C20E5C400B2746F /* SettingsView.swift in Sources */,
 				4F2988652C22F43E00B2746F /* RoundedCorner.swift in Sources */,
+				4FB4F9512C2C80DF00E886D6 /* SettingRowView.swift in Sources */,
 				4FB4F9422C2B20AB00E886D6 /* Helpers.swift in Sources */,
 				4F2988792C23903F00B2746F /* TrainingView.swift in Sources */,
 				4F2988632C223C3D00B2746F /* GeneratedSetView.swift in Sources */,

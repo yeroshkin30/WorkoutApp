@@ -1,5 +1,5 @@
 //
-//  TrainingResustView.swift
+//  TrainingResultView.swift
 //  iOSDevTestApp
 //
 //  Created by Oleh Yeroshkin on 25.06.2024.
@@ -8,9 +8,8 @@
 import SwiftUI
 
 struct TrainingResultView: View {
-    
-    @State var comletedSet: ExerciseSet = setsArray.first!
-    @State var completedExercises: [FinishedExercise]
+    let completedSet: ExerciseSet
+    let completedExercises: [FinishedExercise]
     let onCompleteButtonTap: () -> Void
 
     var body: some View {
@@ -25,23 +24,7 @@ struct TrainingResultView: View {
             .ignoresSafeArea(edges: .top)
             .background(.gray)
 
-            VStack(alignment: .leading) {
-
-                Text("Detail of training".uppercased())
-                    .font(.customFont(name: .bebasNeue, size: 24))
-                    .foregroundStyle(.white)
-                    .padding()
-                ScrollView {
-                    VStack {
-                        ForEach(completedExercises, id: \.id) { completedExercise in
-                            CompletedExerciseRow(
-                                name: completedExercise.exercize.name,
-                                trainingTime: completedExercise.trainingTime
-                            )
-                        }
-                    }
-                }
-            }
+            completedExercisesList
         }
         .ignoresSafeArea(edges: .top)
         .background(.backgroundMain)
@@ -61,7 +44,7 @@ extension TrainingResultView {
             Text("Workout completed")
                 .foregroundStyle(.customRed)
                 .font(.system(size: 17))
-            Text(comletedSet.name)
+            Text(completedSet.name)
                 .foregroundStyle(.white)
                 .font(.customFont(name: .bebasNeue, size: 44))
             HStack {
@@ -81,11 +64,31 @@ extension TrainingResultView {
                     Text("Exercises")
                         .foregroundStyle(.white.opacity(0.5))
                         .font(.system(size: 12))
-                    Text("\(completedExercises.count)/\(comletedSet.exercisesCount) ")
+                    Text("\(completedExercises.count)/\(completedSet.exercisesCount) ")
                         .foregroundStyle(.white)
                         .font(.customFont(name: .bebasNeue, size: 32))
                 }
                 Spacer()
+            }
+        }
+    }
+
+    var completedExercisesList: some View {
+        VStack(alignment: .leading) {
+
+            Text("Detail of training".uppercased())
+                .font(.customFont(name: .bebasNeue, size: 24))
+                .foregroundStyle(.white)
+                .padding()
+            ScrollView {
+                VStack {
+                    ForEach(completedExercises, id: \.id) { completedExercise in
+                        CompletedExerciseRow(
+                            name: completedExercise.exercise.name,
+                            trainingTime: completedExercise.trainingTime
+                        )
+                    }
+                }
             }
         }
     }
@@ -108,13 +111,13 @@ extension TrainingResultView {
 
 
 #Preview {
-    TrainingResultView(completedExercises: [
-        .init(exercize: .init(name: "Exercise1", repeatsCount: "asdfa", description: ""), trainingTime: 150),
-        .init(exercize: .init(name: "Exercise1", repeatsCount: "asdfa", description: ""), trainingTime: 150),
-        .init(exercize: .init(name: "Exercise1", repeatsCount: "asdfa", description: ""), trainingTime: 150),
-        .init(exercize: .init(name: "Exercise1", repeatsCount: "asdfa", description: ""), trainingTime: 150),
-        .init(exercize: .init(name: "Exercise1", repeatsCount: "asdfa", description: ""), trainingTime: 150),
-        .init(exercize: .init(name: "Exercise1", repeatsCount: "asdfa", description: ""), trainingTime: 150),
-        .init(exercize: .init(name: "Exercise1", repeatsCount: "asdfa", description: ""), trainingTime: 150),
+    TrainingResultView(completedSet: setsArray.first!, completedExercises: [
+        .init(exercise: .init(name: "Exercise1", repeatsCount: "asdfa", description: ""), trainingTime: 150),
+        .init(exercise: .init(name: "Exercise1", repeatsCount: "asdfa", description: ""), trainingTime: 150),
+        .init(exercise: .init(name: "Exercise1", repeatsCount: "asdfa", description: ""), trainingTime: 150),
+        .init(exercise: .init(name: "Exercise1", repeatsCount: "asdfa", description: ""), trainingTime: 150),
+        .init(exercise: .init(name: "Exercise1", repeatsCount: "asdfa", description: ""), trainingTime: 150),
+        .init(exercise: .init(name: "Exercise1", repeatsCount: "asdfa", description: ""), trainingTime: 150),
+        .init(exercise: .init(name: "Exercise1", repeatsCount: "asdfa", description: ""), trainingTime: 150),
     ]) { }
 }

@@ -9,24 +9,24 @@ import SwiftUI
 
 struct TrainingFlowView: View {
     @State private var showCompleteScreen = false
-    @State private var completedExercizes: [FinishedExercise] = []
+    @State private var completedExercises: [FinishedExercise] = []
     let exerciseSet: ExerciseSet
     let onNeedDismiss: () -> Void
 
     var body: some View {
-        if let firstExecise = exerciseSet.exercises.first {
+        if let firstExercise = exerciseSet.exercises.first {
             NavigationStack {
                 TrainingView(
-                    firstExercise: firstExecise,
+                    firstExercise: firstExercise,
                     allExercises: exerciseSet.exercises) { event in
                         switch event {
-                        case .exercizeFinihsed(let finishedExercize):
-                            completedExercizes.append(finishedExercize)
-                        case .exercizeSetFinihsed(let finishedExercize):
-                            completedExercizes.append(finishedExercize)
+                        case .exerciseFinished(let finishedExercise):
+                            completedExercises.append(finishedExercise)
+                        case .exerciseSetFinished(let finishedExercise):
+                            completedExercises.append(finishedExercise)
                             showCompleteScreen = true
                         case .closeButtonTap:
-                            if !completedExercizes.isEmpty {
+                            if !completedExercises.isEmpty {
                                 showCompleteScreen = true
                             } else {
                                 onNeedDismiss()
@@ -35,8 +35,8 @@ struct TrainingFlowView: View {
                     }
                     .navigationDestination(isPresented: $showCompleteScreen) {
                         TrainingResultView(
-                            comletedSet: exerciseSet,
-                            completedExercises: completedExercizes,
+                            completedSet: exerciseSet,
+                            completedExercises: completedExercises,
                             onCompleteButtonTap: onNeedDismiss
                         )
                     }

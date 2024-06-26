@@ -9,6 +9,6 @@ import Foundation
 
 struct FinishedExercise {
     let id: UUID = .init()
-    let exercize: Exercise
+    let exercise: Exercise
     let trainingTime: Int
 }

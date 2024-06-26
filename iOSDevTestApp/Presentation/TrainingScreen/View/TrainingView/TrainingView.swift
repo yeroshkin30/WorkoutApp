@@ -9,8 +9,8 @@ import SwiftUI
 
 struct TrainingView: View {
     enum Event {
-        case exercizeFinihsed(FinishedExercise)
-        case exercizeSetFinihsed(FinishedExercise)
+        case exerciseFinished(FinishedExercise)
+        case exerciseSetFinished(FinishedExercise)
         case closeButtonTap
     }
 
@@ -23,7 +23,7 @@ struct TrainingView: View {
 
     init(firstExercise: Exercise, allExercises: [Exercise], onEvent: @escaping (Event) -> Void) {
         self.viewState = .init(
-            currentExersize: firstExercise,
+            currentExercise: firstExercise,
             allExercises: Array(allExercises.dropFirst()),
             curentExerciseNumber: 1,
             totalExercises: allExercises.count
@@ -36,7 +36,7 @@ struct TrainingView: View {
     var body: some View {
         ZStack {
             VStack {
-                ExercizeDescriptionView(exercise: viewState.currentExercise)
+                ExerciseDescriptionView(exercise: viewState.currentExercise)
                 Spacer()
 
                 nextExerciseInfoView
@@ -52,12 +52,10 @@ struct TrainingView: View {
             }
 
             ZStack {
-                // Outer glowing circle
                 Circle()
                     .stroke(Color.red.opacity(0.8), lineWidth: 10)
                     .shadow(color: Color.red.opacity(0.7), radius: 10, x: 0, y: 0)
 
-                // Timer text
                 Text(String(secondsElapsed: timeElapsed))
                     .font(.customFont(name: .bebasNeue, size: 44))
                     .foregroundColor(.white)
@@ -74,7 +72,7 @@ struct TrainingView: View {
         )
         .background(.backgroundMain)
         .toolbar {
-           navigationBarButtons
+            navigationBarButtons
         }
         .alert("Alert", isPresented: $alertPresented) {
             Button("Finish", role: .destructive) { onEvent(.closeButtonTap) }
@@ -83,18 +81,21 @@ struct TrainingView: View {
             Text("Are you sure you want to finish the workout?")
         }
     }
+}
 
-    func handeNextButtonTap() {
+private extension TrainingView {
+
+    func handleNextButtonTap() {
         isRunning = false
         timer?.invalidate()
-        let finishedExerice = FinishedExercise(exercize: viewState.currentExercise, trainingTime: timeElapsed)
+        let finishedExercise = FinishedExercise(exercise: viewState.currentExercise, trainingTime: timeElapsed)
         timeElapsed = 0
 
         if viewState.nextExercise != nil {
             viewState.getNextExercise()
-            onEvent(.exercizeFinihsed(finishedExerice))
+            onEvent(.exerciseFinished(finishedExercise))
         } else {
-            onEvent(.exercizeSetFinihsed(finishedExerice))
+            onEvent(.exerciseSetFinished(finishedExercise))
         }
     }
 
@@ -104,14 +105,12 @@ struct TrainingView: View {
             self.timeElapsed += 1
         }
     }
-}
 
-extension TrainingView {
     @ToolbarContentBuilder
     var navigationBarButtons: some ToolbarContent {
         ToolbarItem(placement: .topBarLeading) {
             HStack(alignment: .firstTextBaseline, spacing: 0) {
-                Text("\(viewState.curentExerciseNumber)")
+                Text("\(viewState.currentExerciseNumber)")
                     .font(.system(size: 28, weight: .bold))
                     .foregroundColor(.white)
 
@@ -176,7 +175,7 @@ extension TrainingView {
 
     var nextButton: some View {
         Button {
-            handeNextButtonTap()
+            handleNextButtonTap()
         } label: {
             Text(viewState.nextExercise != nil ? "NEXT" : "FINISH")
                 .font(.customFont(name: .bebasNeue, size: 24))
@@ -191,53 +190,28 @@ extension TrainingView {
         private var iterator: IndexingIterator<[Exercise]>
         var currentExercise: Exercise
         var nextExercise: Exercise?
-        var curentExerciseNumber: Int
+        var currentExerciseNumber: Int
         var totalExercise: Int
-        var traninigTime: Int = 0
+        var trainingTime: Int = 0
         var isRunning: Bool = false
         private var timer: Timer?
 
-        init(currentExersize: Exercise, allExercises: [Exercise], curentExerciseNumber: Int, totalExercises: Int) {
+        init(currentExercise: Exercise, allExercises: [Exercise], curentExerciseNumber: Int, totalExercises: Int) {
             var iterator = allExercises.makeIterator()
             self.nextExercise = iterator.next()
             self.iterator = iterator
-            self.currentExercise = currentExersize
-            self.curentExerciseNumber = curentExerciseNumber
+            self.currentExercise = currentExercise
+            self.currentExerciseNumber = curentExerciseNumber
             self.totalExercise = totalExercises
         }
 
         mutating func getNextExercise() {
             if let nextExercise {
-                curentExerciseNumber += 1
+                currentExerciseNumber += 1
                 currentExercise = nextExercise
                 self.nextExercise = iterator.next()
             }
         }
-    }
-}
-
-
-struct ExercizeDescriptionView: View {
-    let exercise: Exercise
-
-    var body: some View {
-        VStack(alignment: .center) {
-            HStack {
-                Text(exercise.repeatsCount)
-                    .font(.customFont(name: .bebasNeue, size: 24))
-                    .foregroundColor(.gray)
-                Text(exercise.name)
-                    .font(.customFont(name: .bebasNeue, size: 24))
-                    .foregroundColor(.white)
-            }
-            .padding(.bottom)
-
-            Text(exercise.description)
-                .font(.system(size: 12))
-                .foregroundColor(.gray)
-                .multilineTextAlignment(.center)
-        }
-        .padding()
     }
 }
 

@@ -10,20 +10,20 @@ import SwiftUI
 struct GeneratedSetView: View {
     enum Event {
         case backButtonTaped
-        case exersizeSetChosen(ExerciseSet)
+        case exerciseSetChosen(ExerciseSet)
     }
 
-    @State var generatedSets: [ExerciseSet]
+    let generatedSets: [ExerciseSet]
     let onEvent: (Event) -> Void
 
     var body: some View {
         VStack {
             ScrollView {
-                ForEach(generatedSets) { exercizeSet in
+                ForEach(generatedSets) { exerciseSet in
                     Button(action: {
-                        onEvent(.exersizeSetChosen(exercizeSet))
+                        onEvent(.exerciseSetChosen(exerciseSet))
                     }, label: {
-                        GeneratedSetRow(exersizeSet: exercizeSet)
+                        GeneratedSetRow(exerciseSet: exerciseSet)
                     })
                 }
                 .padding()

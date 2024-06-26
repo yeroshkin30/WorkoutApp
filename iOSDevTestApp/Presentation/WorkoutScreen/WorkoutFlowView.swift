@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct WorkoutFlowView: View {
-    @State var sets: [ExerciseSet] = setsArray
+    let sets: [ExerciseSet]
     @State private var path: [Destination] = []
     @State private var sheetDestination: Destination?
 
@@ -22,7 +22,9 @@ struct WorkoutFlowView: View {
         }
         .fullScreenCover(item: $sheetDestination, content: destinationView)
     }
+}
 
+private extension WorkoutFlowView {
     @ViewBuilder
     func destinationView(for destination: Destination) -> some View {
         switch destination {
@@ -31,7 +33,7 @@ struct WorkoutFlowView: View {
                 handleAllSetViewEvent(with: event)
             }
         case .setsDetail(let exercisesSet):
-            SetDetailView(exercizeSet: exercisesSet) { event in
+            SetDetailView(exerciseSet: exercisesSet) { event in
                 handleSetDetailViewEvent(with: event)
             }
         case .startTraining(let exerciseSet):
@@ -44,27 +46,15 @@ struct WorkoutFlowView: View {
         }
     }
 
-    enum Destination: Hashable, Identifiable {
-        var id: UUID {
-            .init()
-        }
-
-        case allSets
-        case setsDetail(ExerciseSet)
-        case startTraining(ExerciseSet)
-    }
-}
-
 // MARK: - Event handlers
 
-private extension WorkoutFlowView {
     func handleWorkoutViewEvents(with event: WorkoutView.Event) {
         switch event {
         case .backButtonTaped:
             path.removeLast()
         case .viewAllSets:
             path.append(.allSets)
-        case .exersizeSetChosen(let setModel):
+        case .exerciseSetChosen(let setModel):
             path.append(.setsDetail(setModel))
         }
     }
@@ -73,7 +63,7 @@ private extension WorkoutFlowView {
         switch event {
         case .backButtonTaped:
             path.removeLast()
-        case .exersizeSetChosen(let setModel):
+        case .exerciseSetChosen(let setModel):
             path.append(.setsDetail(setModel))
         }
     }
@@ -82,9 +72,19 @@ private extension WorkoutFlowView {
         switch event {
         case .backButtonTap:
             path.removeLast()
-        case .startTraining(let exersizeSet):
-            sheetDestination = .startTraining(exersizeSet)
+        case .startTraining(let exerciseSet):
+            sheetDestination = .startTraining(exerciseSet)
         }
+    }
+
+    enum Destination: Hashable, Identifiable {
+        var id: UUID {
+            .init()
+        }
+
+        case allSets
+        case setsDetail(ExerciseSet)
+        case startTraining(ExerciseSet)
     }
 }
 

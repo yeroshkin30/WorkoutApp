@@ -1,5 +1,5 @@
 //
-//  ExercizeRow.swift
+//  ExerciseRow.swift
 //  iOSDevTestApp
 //
 //  Created by oleh yeroshkin on 17.06.2024.
@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct ExercizeRow: View {
-    let exersize: Exercise
+struct ExerciseRow: View {
+    let exercise: Exercise
 
     var body: some View {
         HStack(spacing: 0) {
@@ -17,7 +17,7 @@ struct ExercizeRow: View {
                 .foregroundStyle(.gray)
                 .padding(0)
             VStack(alignment: .leading, spacing: 12) {
-                Text(exersize.name)
+                Text(exercise.name)
                     .font(.system(size: 20))
                     .foregroundStyle(.white)
                 HStack {
@@ -25,7 +25,7 @@ struct ExercizeRow: View {
                         .font(.system(size: 12))
                         .foregroundStyle(.white.opacity(0.5))
                     Spacer()
-                    Text("X\(exersize.repeatsCount)")
+                    Text("X\(exercise.repeatsCount)")
                         .font(.system(size: 12))
                         .foregroundStyle(.white)
                 }
@@ -38,7 +38,7 @@ struct ExercizeRow: View {
 }
 
 #Preview {
-    ExercizeRow(exersize: Exercise(
+    ExerciseRow(exercise: Exercise(
         name: "Push-Ups",
         repeatsCount: "15",
         description: "Begin in a plank position, lower your body until your chest nearly touches the floor, then push back up."

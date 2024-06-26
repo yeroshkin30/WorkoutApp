@@ -7,49 +7,29 @@
 
 import SwiftUI
 
-
-class ViewModel: ObservableObject {
-    @Published var searchText: String = "" {
-        didSet {
-            updateFilteredItems()
-        }
-    }
-    @Published var filteredItems: [ExerciseSet] = []
-    private var exerciseSets: [ExerciseSet]
-
-    init(sets: [ExerciseSet]) {
-        self.exerciseSets = sets
-        updateFilteredItems()
-    }
-
-    private func updateFilteredItems() {
-        if searchText.isEmpty {
-            filteredItems = exerciseSets
-        } else {
-            filteredItems = exerciseSets.filter { $0.name.lowercased().contains(searchText.lowercased()) }
-        }
-    }
-}
-
 struct WorkoutView: View {
     enum Event {
         case backButtonTaped
         case viewAllSets
-        case exersizeSetChosen(ExerciseSet)
+        case exerciseSetChosen(ExerciseSet)
     }
 
     @StateObject var viewModel: ViewModel
     let onEvent: (Event) -> Void
 
+    // MARK: - Initialisers
+
     init(sets: [ExerciseSet], onEvent: @escaping (Event) -> Void) {
         self._viewModel = StateObject(wrappedValue: ViewModel(sets: sets))
         self.onEvent = onEvent
     }
+    
+    // MARK: - View
 
     var body: some View {
         VStack {
             ZStack(alignment: .bottom) {
-                Image(.topRedBackgorund)
+                Image(.topRedBackground)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                 VStack(alignment: .leading) {
@@ -65,11 +45,11 @@ struct WorkoutView: View {
             }
             headerView
             ScrollView {
-                ForEach(viewModel.filteredItems) { exercizeSet in
+                ForEach(viewModel.filteredItems) { exerciseSet in
                     Button(action: {
-                        onEvent(.exersizeSetChosen(exercizeSet))
+                        onEvent(.exerciseSetChosen(exerciseSet))
                     }, label: {
-                        GeneratedSetRow(exersizeSet: exercizeSet)
+                        GeneratedSetRow(exerciseSet: exerciseSet)
                     })
                 }
                 .padding()
@@ -77,6 +57,31 @@ struct WorkoutView: View {
         }
         .background(.backgroundMain)
         .ignoresSafeArea(edges: .top)
+    }
+}
+
+extension WorkoutView {
+    class ViewModel: ObservableObject {
+        @Published var searchText: String = "" {
+            didSet {
+                updateFilteredItems()
+            }
+        }
+        @Published var filteredItems: [ExerciseSet] = []
+        private var exerciseSets: [ExerciseSet]
+
+        init(sets: [ExerciseSet]) {
+            self.exerciseSets = sets
+            updateFilteredItems()
+        }
+
+        private func updateFilteredItems() {
+            if searchText.isEmpty {
+                filteredItems = exerciseSets
+            } else {
+                filteredItems = exerciseSets.filter { $0.name.lowercased().contains(searchText.lowercased()) }
+            }
+        }
     }
 }
 

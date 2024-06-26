@@ -24,7 +24,7 @@ struct SettingsView: View {
                         PolicyTermsView(text: privacyPolicyText)
                             .navigationTitle("Policy")
                     } label: {
-                        SettingsRow(image: Image(.privacyPolicy), text: "Privacy Policy")
+                        SettingsRowView(image: Image(.privacyPolicy), text: "Privacy Policy")
                     }
 
                     Rectangle()
@@ -36,7 +36,7 @@ struct SettingsView: View {
                         PolicyTermsView(text: privacyPolicyText)
                             .navigationTitle("Terms")
                     } label: {
-                        SettingsRow(image: Image(.termOfUse), text: "Terms of Use")
+                        SettingsRowView(image: Image(.termOfUse), text: "Terms of Use")
                     }
                 }
                 .background(.rowBackground)
@@ -50,56 +50,10 @@ struct SettingsView: View {
     }
 }
 
-struct PolicyTermsView: View {
-    @Environment(\.dismiss) var dismiss
-    let text: String
-
-    var body: some View {
-        ScrollView {
-            Text(text)
-                .padding()
-                .foregroundStyle(.white)
-        }
-        .background(
-            Image(.background)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .ignoresSafeArea()
-        )
-        .background(.backgroundMain)
-        .navigationBarBackButtonHidden()
-        .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
-                CustomBackButton {
-                    dismiss()
-                }
-            }
-        }
-    }
-}
-
 #Preview {
     SettingsView()
 }
 
-
-struct SettingsRow: View {
-    let image: Image
-    let text: String
-
-    var body: some View {
-        HStack {
-            image
-            Text(text)
-                .font(.system(size: 17))
-                .foregroundStyle(Color.white)
-            Spacer()
-            Image(systemName: "chevron.right")
-                .foregroundStyle(.white)
-        }
-        .padding()
-    }
-}
 
 
 

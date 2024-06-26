@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct GeneratedSetRow: View {
-    let exersizeSet: ExerciseSet
+    let exerciseSet: ExerciseSet
 
     var body: some View {
         HStack {
@@ -19,13 +19,13 @@ struct GeneratedSetRow: View {
                 .clipShape(RoundedRectangle(cornerRadius: 8))
 
             VStack(alignment: .leading) {
-                Text(exersizeSet.name)
+                Text(exerciseSet.name)
                     .font(.headline)
                     .foregroundStyle(.white)
 
                 HStack {
-                    HSetStack(image: Image(systemName: "clock"), text: "\(exersizeSet.duration) min.")
-                    HSetStack(image: Image(.ballSmallIcon), text: "\(exersizeSet.exercisesCount) exer.")
+                    HSetStack(image: Image(systemName: "clock"), text: "\(exerciseSet.duration) min.")
+                    HSetStack(image: Image(.ballSmallIcon), text: "\(exerciseSet.exercisesCount) exer.")
                 }
             }
             Spacer()
@@ -39,7 +39,7 @@ struct GeneratedSetRow: View {
 }
 
 #Preview {
-    GeneratedSetRow(exersizeSet: setsArray.first!)
+    GeneratedSetRow(exerciseSet: setsArray.first!)
 }
 
 
