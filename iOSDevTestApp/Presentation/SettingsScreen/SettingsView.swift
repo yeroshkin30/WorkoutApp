@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct SettingsView: View {
+
+    @Environment(\.dismiss) var dismiss
+
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading) {
@@ -17,19 +20,23 @@ struct SettingsView: View {
                     .padding()
                 
                 VStack(spacing: 0){
-                    NavigationLink("sdfsdfdf") {
+                    NavigationLink {
                         PolicyTermsView(text: privacyPolicyText)
                             .navigationTitle("Policy")
-                    }
-                    Button { } label: {
+                    } label: {
                         SettingsRow(image: Image(.privacyPolicy), text: "Privacy Policy")
                     }
+
                     Rectangle()
                         .fill(Color.white.opacity(0.2))
                         .frame(height: 1)
                         .padding(.horizontal, 16)
-                    Button { } label: {
-                        SettingsRow(image: Image(.termOfUse), text: "Privacy Policy")
+
+                    NavigationLink {
+                        PolicyTermsView(text: privacyPolicyText)
+                            .navigationTitle("Terms")
+                    } label: {
+                        SettingsRow(image: Image(.termOfUse), text: "Terms of Use")
                     }
                 }
                 .background(.rowBackground)
@@ -44,10 +51,30 @@ struct SettingsView: View {
 }
 
 struct PolicyTermsView: View {
+    @Environment(\.dismiss) var dismiss
     let text: String
 
     var body: some View {
-        Text(text)
+        ScrollView {
+            Text(text)
+                .padding()
+                .foregroundStyle(.white)
+        }
+        .background(
+            Image(.background)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .ignoresSafeArea()
+        )
+        .background(.backgroundMain)
+        .navigationBarBackButtonHidden()
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                CustomBackButton {
+                    dismiss()
+                }
+            }
+        }
     }
 }
 
@@ -59,6 +86,7 @@ struct PolicyTermsView: View {
 struct SettingsRow: View {
     let image: Image
     let text: String
+
     var body: some View {
         HStack {
             image

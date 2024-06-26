@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct WorkoutFlowView: View {
-    @State var sets: [ExercizeSet] = setsArray
+    @State var sets: [ExerciseSet] = setsArray
     @State private var path: [Destination] = []
     @State private var sheetDestination: Destination?
 
     var body: some View {
         NavigationStack(path: $path) {
-            WorkoutView(generatedSets: sets) { event in
+            WorkoutView(sets: sets) { event in
                 handleWorkoutViewEvents(with: event)
             }
             .background(.backgroundMain)
@@ -50,8 +50,8 @@ struct WorkoutFlowView: View {
         }
 
         case allSets
-        case setsDetail(ExercizeSet)
-        case startTraining(ExercizeSet)
+        case setsDetail(ExerciseSet)
+        case startTraining(ExerciseSet)
     }
 }
 

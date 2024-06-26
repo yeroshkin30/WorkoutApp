@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct GeneratedSetRow: View {
-    let exersizeSet: ExercizeSet
+    let exersizeSet: ExerciseSet
 
     var body: some View {
         HStack {

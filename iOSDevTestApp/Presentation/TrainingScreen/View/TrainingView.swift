@@ -7,24 +7,18 @@
 
 import SwiftUI
 
-struct FinishedExercize {
-    let id: UUID = .init()
-    let exercize: Exercise
-    let trainingTime: Int
-}
-
 struct TrainingView: View {
     enum Event {
-        case exercizeFinihsed(FinishedExercize)
-        case exercizeSetFinihsed(FinishedExercize)
+        case exercizeFinihsed(FinishedExercise)
+        case exercizeSetFinihsed(FinishedExercise)
         case closeButtonTap
     }
 
     @State private var timeElapsed: Int = 0
     @State private var isRunning: Bool = false
+    @State private var viewState: TrainingState
+    @State private var alertPresented = false
     @State private var timer: Timer?
-    @State var viewState: TrainingState
-    @State var alertPresented = false
     let onEvent: (Event) -> Void
 
     init(firstExercise: Exercise, allExercises: [Exercise], onEvent: @escaping (Event) -> Void) {
@@ -93,7 +87,7 @@ struct TrainingView: View {
     func handeNextButtonTap() {
         isRunning = false
         timer?.invalidate()
-        let finishedExerice = FinishedExercize(exercize: viewState.currentExercise, trainingTime: timeElapsed)
+        let finishedExerice = FinishedExercise(exercize: viewState.currentExercise, trainingTime: timeElapsed)
         timeElapsed = 0
 
         if viewState.nextExercise != nil {

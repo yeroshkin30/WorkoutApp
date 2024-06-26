@@ -10,10 +10,10 @@ import SwiftUI
 struct GeneratedSetView: View {
     enum Event {
         case backButtonTaped
-        case exersizeSetChosen(ExercizeSet)
+        case exersizeSetChosen(ExerciseSet)
     }
 
-    @State var generatedSets: [ExercizeSet]
+    @State var generatedSets: [ExerciseSet]
     let onEvent: (Event) -> Void
 
     var body: some View {

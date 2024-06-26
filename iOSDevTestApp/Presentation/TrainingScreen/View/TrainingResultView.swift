@@ -9,8 +9,8 @@ import SwiftUI
 
 struct TrainingResultView: View {
     
-    @State var comletedSet: ExercizeSet = setsArray.first!
-    @State var completedExercises: [FinishedExercize]
+    @State var comletedSet: ExerciseSet = setsArray.first!
+    @State var completedExercises: [FinishedExercise]
     let onCompleteButtonTap: () -> Void
 
     var body: some View {

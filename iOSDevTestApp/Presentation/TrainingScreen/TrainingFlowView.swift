@@ -9,8 +9,8 @@ import SwiftUI
 
 struct TrainingFlowView: View {
     @State private var showCompleteScreen = false
-    @State private var completedExercizes: [FinishedExercize] = []
-    let exerciseSet: ExercizeSet
+    @State private var completedExercizes: [FinishedExercise] = []
+    let exerciseSet: ExerciseSet
     let onNeedDismiss: () -> Void
 
     var body: some View {

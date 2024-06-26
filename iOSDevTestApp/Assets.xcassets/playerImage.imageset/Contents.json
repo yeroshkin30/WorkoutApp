@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "BlankImage.png",
+      "filename" : "playerImage.png",
       "idiom" : "universal",
       "scale" : "1x"
     },

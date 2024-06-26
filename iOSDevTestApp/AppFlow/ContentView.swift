@@ -8,31 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var toggle = false
+
     init() {
         setupNavigationBarAppearance()
     }
+    
     var body: some View {
-//        ZStack {
-//            Color.red
-//            if toggle {
-//            } else {
-//                Color.green
-//                    .transition(.asymmetric(insertion: .push(from: .trailing), removal: .push(from: .leading)))
-//            }
-//
-//            Button {
-//                withAnimation {
-//                    toggle.toggle()
-//                }
-//            } label: {
-//                Text("Test")
-//            }
-//        }
-
-        VStack {
-            Home()
-        }
+        AppFlowView()
+//        CircularLoadingView()
     }
 
     private func setupNavigationBarAppearance() {

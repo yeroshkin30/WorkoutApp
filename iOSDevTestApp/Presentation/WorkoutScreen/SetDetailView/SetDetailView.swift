@@ -9,11 +9,11 @@ import SwiftUI
 
 struct SetDetailView: View {
     enum Event {
-        case startTraining(ExercizeSet)
+        case startTraining(ExerciseSet)
         case backButtonTap
     }
 
-    let exercizeSet: ExercizeSet
+    let exercizeSet: ExerciseSet
     let onEvent: (Event) -> Void
 
     var body: some View {
