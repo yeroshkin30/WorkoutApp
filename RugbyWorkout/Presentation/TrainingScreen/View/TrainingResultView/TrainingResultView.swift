@@ -119,5 +119,19 @@ extension TrainingResultView {
         .init(exercise: .init(name: "Exercise1", repeatsCount: "asdfa", description: ""), trainingTime: 150),
         .init(exercise: .init(name: "Exercise1", repeatsCount: "asdfa", description: ""), trainingTime: 150),
         .init(exercise: .init(name: "Exercise1", repeatsCount: "asdfa", description: ""), trainingTime: 150),
+        .init(exercise: .init(name: "Exercise1", repeatsCount: "asdfa", description: ""), trainingTime: 150),
+        .init(exercise: .init(name: "Exercise1", repeatsCount: "asdfa", description: ""), trainingTime: 150),
+        .init(exercise: .init(name: "Exercise1", repeatsCount: "asdfa", description: ""), trainingTime: 150),
+        .init(exercise: .init(name: "Exercise1", repeatsCount: "asdfa", description: ""), trainingTime: 150),
+        .init(exercise: .init(name: "Exercise1", repeatsCount: "asdfa", description: ""), trainingTime: 150),
+        .init(exercise: .init(name: "Exercise1", repeatsCount: "asdfa", description: ""), trainingTime: 150),
+        .init(exercise: .init(name: "Exercise1", repeatsCount: "asdfa", description: ""), trainingTime: 150),
+        .init(exercise: .init(name: "Exercise1", repeatsCount: "asdfa", description: ""), trainingTime: 150),
+        .init(exercise: .init(name: "Exercise1", repeatsCount: "asdfa", description: ""), trainingTime: 150),
+        .init(exercise: .init(name: "Exercise1", repeatsCount: "asdfa", description: ""), trainingTime: 150),
+        .init(exercise: .init(name: "Exercise1", repeatsCount: "asdfa", description: ""), trainingTime: 150),
+        .init(exercise: .init(name: "Exercise1", repeatsCount: "asdfa", description: ""), trainingTime: 150),
+        .init(exercise: .init(name: "Exercise1", repeatsCount: "asdfa", description: ""), trainingTime: 150),
+        .init(exercise: .init(name: "Exercise1", repeatsCount: "asdfa", description: ""), trainingTime: 150)
     ]) { }
 }

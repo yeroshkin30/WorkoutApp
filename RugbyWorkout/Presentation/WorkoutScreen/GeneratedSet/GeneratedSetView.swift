@@ -33,7 +33,8 @@ struct GeneratedSetView: View {
             Image(.background)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-            )
+                .ignoresSafeArea()
+        )
         .background(.backgroundMain)
         .navigationTitle("Generated sets")
         .navigationBarBackButtonHidden()
@@ -48,5 +49,11 @@ struct GeneratedSetView: View {
                 }
             }
         }
+    }
+}
+
+#Preview {
+    NavigationStack {
+        GeneratedSetView(generatedSets: setsArray, onEvent: { _ in })
     }
 }

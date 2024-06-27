@@ -23,7 +23,6 @@ struct SetDetailView: View {
                 .aspectRatio(contentMode: .fit)
                 .ignoresSafeArea()
 
-
             VStack(alignment: .leading, spacing: 20) {
                 topSetInfoView
                 ExerciseListView(exercises: exercises)

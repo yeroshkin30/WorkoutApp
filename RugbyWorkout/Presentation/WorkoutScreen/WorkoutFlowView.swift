@@ -9,6 +9,7 @@ import SwiftUI
 
 struct WorkoutFlowView: View {
     let sets: [ExerciseSet]
+    @Binding var isTabBarHidden: Bool
     @State private var path: [Destination] = []
     @State private var sheetDestination: Destination?
 
@@ -19,6 +20,10 @@ struct WorkoutFlowView: View {
             }
             .background(.backgroundMain)
             .navigationDestination(for: Destination.self, destination: destinationView)
+            .onChange(of: path, perform: { value in
+                print(path.isEmpty)
+                    isTabBarHidden = !path.isEmpty
+            })
         }
         .fullScreenCover(item: $sheetDestination, content: destinationView)
     }
@@ -89,5 +94,5 @@ private extension WorkoutFlowView {
 }
 
 #Preview {
-    WorkoutFlowView(sets: setsArray)
+    WorkoutFlowView(sets: setsArray, isTabBarHidden: .constant(true))
 }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SettingsView: View {
-
+    @Binding var isTabBarHidden: Bool
     @Environment(\.dismiss) var dismiss
 
     var body: some View {
@@ -18,26 +18,16 @@ struct SettingsView: View {
                     .font(.system(size: 32))
                     .foregroundStyle(Color.white)
                     .padding()
-                
+
                 VStack(spacing: 0){
-                    NavigationLink {
-                        PolicyTermsView(text: privacyPolicyText)
-                            .navigationTitle("Policy")
-                    } label: {
-                        SettingsRowView(image: Image(.privacyPolicy), text: "Privacy Policy")
-                    }
+                    policyRow
 
                     Rectangle()
                         .fill(Color.white.opacity(0.2))
                         .frame(height: 1)
                         .padding(.horizontal, 16)
 
-                    NavigationLink {
-                        PolicyTermsView(text: privacyPolicyText)
-                            .navigationTitle("Terms")
-                    } label: {
-                        SettingsRowView(image: Image(.termOfUse), text: "Terms of Use")
-                    }
+                    termsRow
                 }
                 .background(.rowBackground)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
@@ -46,12 +36,43 @@ struct SettingsView: View {
             }
             .frame(maxHeight: .infinity)
             .background(.backgroundMain)
+            .onAppear {
+                withAnimation {
+                    isTabBarHidden = false
+                }
+            }
         }
     }
 }
 
+
+private extension SettingsView {
+    var policyRow: some View {
+        NavigationLink {
+            PolicyTermsView(text: privacyPolicyText)
+                .navigationTitle("Policy")
+                .onAppear {
+                    isTabBarHidden = true
+                }
+        } label: {
+            SettingsRowView(image: Image(.privacyPolicy), text: "Privacy Policy")
+        }
+    }
+
+    var termsRow: some View {
+        NavigationLink {
+            PolicyTermsView(text: privacyPolicyText)
+                .navigationTitle("Terms")
+                .onAppear {
+                    isTabBarHidden = true
+                }
+        } label: {
+            SettingsRowView(image: Image(.termOfUse), text: "Terms of Use")
+        }
+    }
+}
 #Preview {
-    SettingsView()
+    SettingsView(isTabBarHidden: .constant(true))
 }
 
 

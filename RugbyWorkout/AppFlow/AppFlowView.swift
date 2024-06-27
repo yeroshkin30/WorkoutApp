@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct AppFlowView: View {
+
+    init() {
+        setupNavigationBarAppearance()
+    }
+
     @State var showOnboarding = false
     @State private var isAnimating = false
     @State private var preloadActive = false
@@ -35,7 +40,7 @@ struct AppFlowView: View {
     }
 }
 
-extension AppFlowView {
+private extension AppFlowView {
 
     var preloadView: some View {
         ZStack {
@@ -65,4 +70,14 @@ extension AppFlowView {
             }
         }
     }
+
+    func setupNavigationBarAppearance() {
+        UINavigationBar.appearance().titleTextAttributes =  [
+            .foregroundColor: UIColor.white,
+            .font: UIFont.systemFont(ofSize: 15, weight: .bold)
+        ]
+        UINavigationBar.appearance().barStyle = .black
+
+    }
 }
+

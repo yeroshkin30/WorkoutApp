@@ -7,12 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F29882D2C203A7D00B2746F /* iOSDevTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F29882C2C203A7D00B2746F /* iOSDevTestAppUITests.swift */; };
-		4F29882F2C203A7D00B2746F /* iOSDevTestAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F29882E2C203A7D00B2746F /* iOSDevTestAppUITestsLaunchTests.swift */; };
-		4F3C0AA32C297321002867D0 /* iOSDevTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2988222C203A7D00B2746F /* iOSDevTestAppTests.swift */; };
 		4F66A7F72C2CA1C40003C79A /* AppFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F66A7C12C2CA1C40003C79A /* AppFlowView.swift */; };
-		4F66A7F82C2CA1C40003C79A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F66A7C22C2CA1C40003C79A /* ContentView.swift */; };
-		4F66A7F92C2CA1C40003C79A /* iOSDevTestAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F66A7C32C2CA1C40003C79A /* iOSDevTestAppApp.swift */; };
+		4F66A7F92C2CA1C40003C79A /* RugbyWorkoutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F66A7C32C2CA1C40003C79A /* RugbyWorkoutApp.swift */; };
 		4F66A7FA2C2CA1C40003C79A /* BebasNeue-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F66A7C52C2CA1C40003C79A /* BebasNeue-Regular.ttf */; };
 		4F66A7FB2C2CA1C40003C79A /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F66A7C72C2CA1C40003C79A /* Extension+String.swift */; };
 		4F66A7FC2C2CA1C40003C79A /* Extension+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F66A7C82C2CA1C40003C79A /* Extension+UIFont.swift */; };
@@ -44,27 +40,13 @@
 		4F66A8162C2CA1C40003C79A /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F66A7F02C2CA1C40003C79A /* OnboardingView.swift */; };
 		4F66A8172C2CA1C40003C79A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F66A7F22C2CA1C40003C79A /* Preview Assets.xcassets */; };
 		4F66A8182C2CA1C40003C79A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F66A7F52C2CA1C40003C79A /* Assets.xcassets */; };
+		4F66A81B2C2CA4410003C79A /* NavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F66A81A2C2CA4410003C79A /* NavigationController+Extension.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		4F2988292C203A7D00B2746F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4F2988062C203A7B00B2746F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4F29880D2C203A7B00B2746F;
-			remoteInfo = iOSDevTestApp;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4F29880E2C203A7B00B2746F /* RugbyWorkout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RugbyWorkout.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F2988222C203A7D00B2746F /* iOSDevTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDevTestAppTests.swift; sourceTree = "<group>"; };
-		4F2988282C203A7D00B2746F /* RugbyWorkoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RugbyWorkoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F29882C2C203A7D00B2746F /* iOSDevTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDevTestAppUITests.swift; sourceTree = "<group>"; };
-		4F29882E2C203A7D00B2746F /* iOSDevTestAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDevTestAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4F66A7C12C2CA1C40003C79A /* AppFlowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFlowView.swift; sourceTree = "<group>"; };
-		4F66A7C22C2CA1C40003C79A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		4F66A7C32C2CA1C40003C79A /* iOSDevTestAppApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSDevTestAppApp.swift; sourceTree = "<group>"; };
+		4F66A7C32C2CA1C40003C79A /* RugbyWorkoutApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RugbyWorkoutApp.swift; sourceTree = "<group>"; };
 		4F66A7C52C2CA1C40003C79A /* BebasNeue-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BebasNeue-Regular.ttf"; sourceTree = "<group>"; };
 		4F66A7C72C2CA1C40003C79A /* Extension+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
 		4F66A7C82C2CA1C40003C79A /* Extension+UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UIFont.swift"; sourceTree = "<group>"; };
@@ -96,17 +78,12 @@
 		4F66A7F02C2CA1C40003C79A /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		4F66A7F22C2CA1C40003C79A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4F66A7F52C2CA1C40003C79A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F66A8192C2CA2B60003C79A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F66A81A2C2CA4410003C79A /* NavigationController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4F29880B2C203A7B00B2746F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4F2988252C203A7D00B2746F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -120,7 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				4F66A7F62C2CA1C40003C79A /* RugbyWorkout */,
-				4F29882B2C203A7D00B2746F /* iOSDevTestAppUITests */,
 				4F29880F2C203A7B00B2746F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -129,27 +105,15 @@
 			isa = PBXGroup;
 			children = (
 				4F29880E2C203A7B00B2746F /* RugbyWorkout.app */,
-				4F2988282C203A7D00B2746F /* RugbyWorkoutUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		4F29882B2C203A7D00B2746F /* iOSDevTestAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4F29882C2C203A7D00B2746F /* iOSDevTestAppUITests.swift */,
-				4F29882E2C203A7D00B2746F /* iOSDevTestAppUITestsLaunchTests.swift */,
-				4F2988222C203A7D00B2746F /* iOSDevTestAppTests.swift */,
-			);
-			path = iOSDevTestAppUITests;
 			sourceTree = "<group>";
 		};
 		4F66A7C42C2CA1C40003C79A /* AppFlow */ = {
 			isa = PBXGroup;
 			children = (
+				4F66A7C32C2CA1C40003C79A /* RugbyWorkoutApp.swift */,
 				4F66A7C12C2CA1C40003C79A /* AppFlowView.swift */,
-				4F66A7C22C2CA1C40003C79A /* ContentView.swift */,
-				4F66A7C32C2CA1C40003C79A /* iOSDevTestAppApp.swift */,
 			);
 			path = AppFlow;
 			sourceTree = "<group>";
@@ -168,6 +132,7 @@
 				4F66A7C72C2CA1C40003C79A /* Extension+String.swift */,
 				4F66A7C82C2CA1C40003C79A /* Extension+UIFont.swift */,
 				4F66A7C92C2CA1C40003C79A /* Extension+View.swift */,
+				4F66A81A2C2CA4410003C79A /* NavigationController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -197,9 +162,8 @@
 		4F66A7D62C2CA1C40003C79A /* SettingsScreen */ = {
 			isa = PBXGroup;
 			children = (
-				4F66A7D32C2CA1C40003C79A /* PolicyTermsView.swift */,
-				4F66A7D42C2CA1C40003C79A /* SettingRowView.swift */,
 				4F66A7D52C2CA1C40003C79A /* SettingsView.swift */,
+				4FA7F6672C2CE33700F199E8 /* Helper */,
 			);
 			path = SettingsScreen;
 			sourceTree = "<group>";
@@ -223,9 +187,9 @@
 		4F66A7DC2C2CA1C40003C79A /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				4F66A7DB2C2CA1C40003C79A /* TabBar.swift */,
 				4F66A7D82C2CA1C40003C79A /* Helper */,
 				4F66A7DA2C2CA1C40003C79A /* Model */,
-				4F66A7DB2C2CA1C40003C79A /* TabBar.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -233,8 +197,8 @@
 		4F66A7DF2C2CA1C40003C79A /* TrainingResultView */ = {
 			isa = PBXGroup;
 			children = (
-				4F66A7DD2C2CA1C40003C79A /* CompletedExerciseRow.swift */,
 				4F66A7DE2C2CA1C40003C79A /* TrainingResultView.swift */,
+				4F66A7DD2C2CA1C40003C79A /* CompletedExerciseRow.swift */,
 			);
 			path = TrainingResultView;
 			sourceTree = "<group>";
@@ -242,8 +206,8 @@
 		4F66A7E22C2CA1C40003C79A /* TrainingView */ = {
 			isa = PBXGroup;
 			children = (
-				4F66A7E02C2CA1C40003C79A /* ExerciseDescriptionView.swift */,
 				4F66A7E12C2CA1C40003C79A /* TrainingView.swift */,
+				4F66A7E02C2CA1C40003C79A /* ExerciseDescriptionView.swift */,
 			);
 			path = TrainingView;
 			sourceTree = "<group>";
@@ -251,8 +215,8 @@
 		4F66A7E32C2CA1C40003C79A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4F66A7DF2C2CA1C40003C79A /* TrainingResultView */,
 				4F66A7E22C2CA1C40003C79A /* TrainingView */,
+				4F66A7DF2C2CA1C40003C79A /* TrainingResultView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -260,8 +224,8 @@
 		4F66A7E52C2CA1C40003C79A /* TrainingScreen */ = {
 			isa = PBXGroup;
 			children = (
-				4F66A7E32C2CA1C40003C79A /* View */,
 				4F66A7E42C2CA1C40003C79A /* TrainingFlowView.swift */,
+				4F66A7E32C2CA1C40003C79A /* View */,
 			);
 			path = TrainingScreen;
 			sourceTree = "<group>";
@@ -269,8 +233,8 @@
 		4F66A7E82C2CA1C40003C79A /* GeneratedSet */ = {
 			isa = PBXGroup;
 			children = (
-				4F66A7E62C2CA1C40003C79A /* GeneratedSetRow.swift */,
 				4F66A7E72C2CA1C40003C79A /* GeneratedSetView.swift */,
+				4F66A7E62C2CA1C40003C79A /* GeneratedSetRow.swift */,
 			);
 			path = GeneratedSet;
 			sourceTree = "<group>";
@@ -278,9 +242,9 @@
 		4F66A7EC2C2CA1C40003C79A /* SetDetail */ = {
 			isa = PBXGroup;
 			children = (
+				4F66A7EB2C2CA1C40003C79A /* SetDetailView.swift */,
 				4F66A7E92C2CA1C40003C79A /* ExercizeListView.swift */,
 				4F66A7EA2C2CA1C40003C79A /* ExersizeRow.swift */,
-				4F66A7EB2C2CA1C40003C79A /* SetDetailView.swift */,
 			);
 			path = SetDetail;
 			sourceTree = "<group>";
@@ -288,10 +252,10 @@
 		4F66A7EF2C2CA1C40003C79A /* WorkoutScreen */ = {
 			isa = PBXGroup;
 			children = (
-				4F66A7E82C2CA1C40003C79A /* GeneratedSet */,
-				4F66A7EC2C2CA1C40003C79A /* SetDetail */,
 				4F66A7ED2C2CA1C40003C79A /* WorkoutFlowView.swift */,
 				4F66A7EE2C2CA1C40003C79A /* WorkoutView.swift */,
+				4F66A7E82C2CA1C40003C79A /* GeneratedSet */,
+				4F66A7EC2C2CA1C40003C79A /* SetDetail */,
 			);
 			path = WorkoutScreen;
 			sourceTree = "<group>";
@@ -299,12 +263,11 @@
 		4F66A7F12C2CA1C40003C79A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				4F66A7D22C2CA1C40003C79A /* Model */,
-				4F66A7D62C2CA1C40003C79A /* SettingsScreen */,
 				4F66A7DC2C2CA1C40003C79A /* TabBar */,
-				4F66A7E52C2CA1C40003C79A /* TrainingScreen */,
 				4F66A7EF2C2CA1C40003C79A /* WorkoutScreen */,
-				4F66A7F02C2CA1C40003C79A /* OnboardingView.swift */,
+				4F66A7E52C2CA1C40003C79A /* TrainingScreen */,
+				4F66A7D62C2CA1C40003C79A /* SettingsScreen */,
+				4FA7F66B2C2DAF1400F199E8 /* Onboarding */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -317,24 +280,35 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		4F66A7F42C2CA1C40003C79A /* TrainingFlow */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TrainingFlow;
-			sourceTree = "<group>";
-		};
 		4F66A7F62C2CA1C40003C79A /* RugbyWorkout */ = {
 			isa = PBXGroup;
 			children = (
 				4F66A7C42C2CA1C40003C79A /* AppFlow */,
-				4F66A7CE2C2CA1C40003C79A /* Helpers */,
 				4F66A7F12C2CA1C40003C79A /* Presentation */,
+				4F66A7D22C2CA1C40003C79A /* Model */,
+				4F66A7CE2C2CA1C40003C79A /* Helpers */,
 				4F66A7F32C2CA1C40003C79A /* Preview Content */,
-				4F66A7F42C2CA1C40003C79A /* TrainingFlow */,
 				4F66A7F52C2CA1C40003C79A /* Assets.xcassets */,
+				4F66A8192C2CA2B60003C79A /* Info.plist */,
 			);
 			path = RugbyWorkout;
+			sourceTree = "<group>";
+		};
+		4FA7F6672C2CE33700F199E8 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				4F66A7D32C2CA1C40003C79A /* PolicyTermsView.swift */,
+				4F66A7D42C2CA1C40003C79A /* SettingRowView.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		4FA7F66B2C2DAF1400F199E8 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				4F66A7F02C2CA1C40003C79A /* OnboardingView.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,24 +331,6 @@
 			productReference = 4F29880E2C203A7B00B2746F /* RugbyWorkout.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4F2988272C203A7D00B2746F /* RugbyWorkoutUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4F2988382C203A7D00B2746F /* Build configuration list for PBXNativeTarget "RugbyWorkoutUITests" */;
-			buildPhases = (
-				4F2988242C203A7D00B2746F /* Sources */,
-				4F2988252C203A7D00B2746F /* Frameworks */,
-				4F2988262C203A7D00B2746F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4F29882A2C203A7D00B2746F /* PBXTargetDependency */,
-			);
-			name = RugbyWorkoutUITests;
-			productName = iOSDevTestAppUITests;
-			productReference = 4F2988282C203A7D00B2746F /* RugbyWorkoutUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -387,10 +343,6 @@
 				TargetAttributes = {
 					4F29880D2C203A7B00B2746F = {
 						CreatedOnToolsVersion = 15.3;
-					};
-					4F2988272C203A7D00B2746F = {
-						CreatedOnToolsVersion = 15.3;
-						TestTargetID = 4F29880D2C203A7B00B2746F;
 					};
 				};
 			};
@@ -408,7 +360,6 @@
 			projectRoot = "";
 			targets = (
 				4F29880D2C203A7B00B2746F /* RugbyWorkout */,
-				4F2988272C203A7D00B2746F /* RugbyWorkoutUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -421,13 +372,6 @@
 				4F66A8172C2CA1C40003C79A /* Preview Assets.xcassets in Resources */,
 				4F66A8182C2CA1C40003C79A /* Assets.xcassets in Resources */,
 				4F66A7FA2C2CA1C40003C79A /* BebasNeue-Regular.ttf in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4F2988262C203A7D00B2746F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,10 +393,10 @@
 				4F66A8102C2CA1C40003C79A /* GeneratedSetView.swift in Sources */,
 				4F66A80E2C2CA1C40003C79A /* TrainingFlowView.swift in Sources */,
 				4F66A8052C2CA1C40003C79A /* SettingRowView.swift in Sources */,
+				4F66A81B2C2CA4410003C79A /* NavigationController+Extension.swift in Sources */,
 				4F66A7FB2C2CA1C40003C79A /* Extension+String.swift in Sources */,
 				4F66A8072C2CA1C40003C79A /* TabBarButton.swift in Sources */,
 				4F66A8142C2CA1C40003C79A /* WorkoutFlowView.swift in Sources */,
-				4F66A7F82C2CA1C40003C79A /* ContentView.swift in Sources */,
 				4F66A8002C2CA1C40003C79A /* RoundedCorner.swift in Sources */,
 				4F66A80F2C2CA1C40003C79A /* GeneratedSetRow.swift in Sources */,
 				4F66A8082C2CA1C40003C79A /* TabBarItem.swift in Sources */,
@@ -461,7 +405,7 @@
 				4F66A8162C2CA1C40003C79A /* OnboardingView.swift in Sources */,
 				4F66A8042C2CA1C40003C79A /* PolicyTermsView.swift in Sources */,
 				4F66A7FF2C2CA1C40003C79A /* Helpers.swift in Sources */,
-				4F66A7F92C2CA1C40003C79A /* iOSDevTestAppApp.swift in Sources */,
+				4F66A7F92C2CA1C40003C79A /* RugbyWorkoutApp.swift in Sources */,
 				4F66A8032C2CA1C40003C79A /* FinishedExercise.swift in Sources */,
 				4F66A8012C2CA1C40003C79A /* ExerciseSet.swift in Sources */,
 				4F66A7FE2C2CA1C40003C79A /* CustomBackButton.swift in Sources */,
@@ -472,25 +416,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4F2988242C203A7D00B2746F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4F29882F2C203A7D00B2746F /* iOSDevTestAppUITestsLaunchTests.swift in Sources */,
-				4F29882D2C203A7D00B2746F /* iOSDevTestAppUITests.swift in Sources */,
-				4F3C0AA32C297321002867D0 /* iOSDevTestAppTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4F29882A2C203A7D00B2746F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4F29880D2C203A7B00B2746F /* RugbyWorkout */;
-			targetProxy = 4F2988292C203A7D00B2746F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4F2988302C203A7D00B2746F /* Debug */ = {
@@ -619,10 +545,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"iOSDevTestApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"RugbyWorkout/Preview Content\"";
 				DEVELOPMENT_TEAM = M439QAGBDK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RugbyWorkout/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "\"\"";
 				INFOPLIST_KEY_LSApplicationCategoryType = "BebasNeue-Regular.ttf";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -655,10 +582,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"iOSDevTestApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"RugbyWorkout/Preview Content\"";
 				DEVELOPMENT_TEAM = M439QAGBDK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RugbyWorkout/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "\"\"";
 				INFOPLIST_KEY_LSApplicationCategoryType = "BebasNeue-Regular.ttf";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -684,42 +612,6 @@
 			};
 			name = Release;
 		};
-		4F2988392C203A7D00B2746F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M439QAGBDK;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = testapp.iOSDevTestAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = iOSDevTestApp;
-			};
-			name = Debug;
-		};
-		4F29883A2C203A7D00B2746F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M439QAGBDK;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = testapp.iOSDevTestAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = iOSDevTestApp;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -737,15 +629,6 @@
 			buildConfigurations = (
 				4F2988332C203A7D00B2746F /* Debug */,
 				4F2988342C203A7D00B2746F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4F2988382C203A7D00B2746F /* Build configuration list for PBXNativeTarget "RugbyWorkoutUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4F2988392C203A7D00B2746F /* Debug */,
-				4F29883A2C203A7D00B2746F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -13,9 +13,9 @@ struct ExerciseDescriptionView: View {
     var body: some View {
         VStack(alignment: .center) {
             HStack {
-                Text(exercise.repeatsCount)
+                Text("X\(exercise.repeatsCount)")
                     .font(.customFont(name: .bebasNeue, size: 24))
-                    .foregroundColor(.gray)
+                    .foregroundColor(.white.opacity(0.5))
                 Text(exercise.name)
                     .font(.customFont(name: .bebasNeue, size: 24))
                     .foregroundColor(.white)

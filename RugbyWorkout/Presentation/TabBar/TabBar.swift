@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct Home: View {
-    @State var selected: TabBarItem = .workout
+    @State private var selected: TabBarItem = .workout
+    @State private var isTabBarHidden = false
 
     init() {
         UITabBar.appearance().isHidden = true
@@ -17,20 +18,22 @@ struct Home: View {
     var body: some View {
         VStack(spacing: 0) {
             TabView(selection: $selected) {
-                WorkoutFlowView(sets: setsArray)
+                WorkoutFlowView(sets: setsArray,isTabBarHidden: $isTabBarHidden)
                     .tag(TabBarItem.workout)
                 NavigationStack {
-                    SettingsView()
+                    SettingsView(isTabBarHidden: $isTabBarHidden)
                 }
                 .tag(TabBarItem.settings)
             }
+            .safeAreaInset(edge: .bottom) {
+                if !isTabBarHidden {
+                    tabBarButtonsView
+                        .frame(maxWidth: .infinity, maxHeight: 57, alignment: .bottom)
+                        .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: -5)
 
-
-
-            tabBarButtonsView
-                .frame(maxWidth: .infinity, maxHeight: 57, alignment: .bottom)
-                .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: -5)
-                .background(Color.rowBackground)
+                        .background(Color.rowBackground)
+                }
+            }
         }
     }
 }
